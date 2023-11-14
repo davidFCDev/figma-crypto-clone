@@ -14,10 +14,10 @@ const Nav: React.FC = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} py-8 w-full flex items-center justify-between font-chakra text-white fixed`}
+      className={`${styles.paddingX} py-8 w-full flex items-center justify-between font-chakra text-white fixed z-50`}
     >
       <Link to="#">
-        <img src="/public/logo.png" alt="logo" />
+        <img src="/logo.png" alt="logo" />
       </Link>
 
       <div className="hidden sm:flex text-lg text-gray-300 gap-14">
@@ -36,7 +36,7 @@ const Nav: React.FC = () => {
       </div>
 
       <button className="bg-blue-gradient p-[1.4px] ">
-        <div className="flex h-14 w-full items-center justify-center bg-black back px-5">
+        <div className="flex h-14 w-full items-center justify-center bg-grayscale-400 back px-5">
           <span className="text-lg text-white">Start Now</span>
         </div>
       </button>
