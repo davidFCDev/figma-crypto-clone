@@ -17,7 +17,10 @@ export default {
       },
       colors: {
         main: {
-          linear: "#0CBAF1 #E95CE9",
+          linear: {
+            blue: "#0CBAF1",
+            purple: "#E95CE9",
+          },
           purple: "#CA6AEB",
           blue: "#19B5F1",
         },
@@ -34,7 +37,7 @@ export default {
         },
       },
       fontFamily: {
-        chakra : ["Chakra Petch", "sans-serif"],
+        chakra: ["Chakra Petch", "sans-serif"],
       },
     },
   },
