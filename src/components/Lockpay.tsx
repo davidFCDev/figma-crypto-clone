@@ -8,7 +8,7 @@ const Lockpay = () => {
         <h1 className="text-5xl leading-tight font-semibold">
           Customizable lockers for any project’s use cases
         </h1>
-        <p className="text-gray-400 font-light text-base leading-7 tracking-wide">
+        <p className="text-grayscale-100 font-light text-base leading-7 tracking-wide">
           By harnessing the power of blockchain technology, LockPay empowers
           businesses, projects, and brands to create customizable lockers
           tailored to their unique requirements. These lockers allow for the
@@ -30,7 +30,7 @@ const Lockpay = () => {
             <span>Referral Program</span>
           </li>
         </ul>
-        <button className="bg-blue-gradient px-7 py-3 mt-4 uppercase font-semibold tracking-widest">
+        <button className="bg-blue-gradient px-10 py-4 mt-4 uppercase font-semibold tracking-widest text-sm">
           Read more
         </button>
       </div>

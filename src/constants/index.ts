@@ -1,3 +1,10 @@
+import cyber from "../../public/cyber-icon.png";
+import wallet from "../../public/wallet-icon.png";
+import browser from "../../public/browser-icon.png";
+import stats from "../../public/stats-icon.png";
+import integration from "../../public/integration-icon.png";
+import design from "../../public/design-icon.png";
+
 export const FUNTIONALITY = [
   {
     title: "Creation of Direct Pay Addresses",
@@ -71,6 +78,45 @@ export const FAQ = [
     title: "How can I get started with LockPay?",
     description:
       "To get started with LockPay, you can visit their website and explore the available resources, including tutorials and documentation. The platform provides guidance on creating customizable lockers and setting up direct payment options for businesses.",
+  },
+];
+
+export const SOLUTION = [
+  {
+    icon: cyber,
+    title: "Enhanced Asset Security",
+    description:
+      "LockPay's locker functionality provides a customizable solution, allowing users to create lockers tailored to their specific requirements.",
+  },
+  {
+    icon: wallet,
+    title: "Cryptocurrency Payments",
+    description:
+      "Cryptocurrency payments have the potential to revolutionize the way we transact, but widespread adoption has been hindered by limitations and complexities.",
+  },
+  {
+    icon: browser,
+    title: "Versatility & Customizability",
+    description:
+      "LockPay offers unparalleled versatility and customizability, allowing businesses, projects, and brands to adapt the platform to their specific use cases.",
+  },
+  {
+    icon: stats,
+    title: "Potential for Growth",
+    description:
+      "LockPay's innovative features and transformative potential create opportunities for collaboration and growth within the blockchain and cryptocurrency space.",
+  },
+  {
+    icon: integration,
+    title: "Seamless Integration",
+    description:
+      "LockPay is designed with a user-centric approach, offering an intuitive interface and seamless integration with existing systems and processes.",
+  },
+  {
+    icon: design,
+    title: "Comprehensive Solution ",
+    description:
+      "In conclusion, LockPay offers a comprehensive solution to the challenges faced in asset security and cryptocurrency payments.",
   },
 ];
 
