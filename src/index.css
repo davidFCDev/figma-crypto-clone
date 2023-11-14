@@ -18,6 +18,11 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #03060e;
+  color: white;
+}
+
 /** Gradient */
 
 .bg-blue-gradient {
@@ -26,6 +31,15 @@
     90deg,
     rgba(12, 186, 241, 1) 0%,
     rgba(233, 92, 233, 1) 82%
+  );
+}
+
+.bg-blue-gradient:hover {
+  background: rgb(12, 186, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 186, 241, 1) 100%,
+    rgba(233, 92, 233, 1) 0%
   );
 }
 
