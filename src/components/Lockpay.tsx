@@ -8,7 +8,7 @@ const Lockpay = () => {
         <h1 className="text-5xl leading-tight font-semibold">
           Customizable lockers for any project’s use cases
         </h1>
-        <p className="text-grayscale-100 font-light text-base leading-7 tracking-wide">
+        <p className={`${styles.parraph}`}>
           By harnessing the power of blockchain technology, LockPay empowers
           businesses, projects, and brands to create customizable lockers
           tailored to their unique requirements. These lockers allow for the
@@ -36,8 +36,12 @@ const Lockpay = () => {
       </div>
 
       <div className="relative flex">
-        <img src="/mobile.png" alt="desktop" className="z-0 w-full"/>
-        <img src="/chart-left.png" alt="desktop"  className="absolute z-10 -bottom-[15%] right-[6%]"/>
+        <img src="/mobile.png" alt="desktop" className="z-0 w-full" />
+        <img
+          src="/chart-left.png"
+          alt="desktop"
+          className="absolute z-10 -bottom-[15%] right-[6%]"
+        />
       </div>
     </main>
   );

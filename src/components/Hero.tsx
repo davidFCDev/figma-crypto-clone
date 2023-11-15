@@ -1,3 +1,4 @@
+import { styles } from "../style";
 import "../styles/hero.css";
 import Resume from "./Resume";
 
@@ -10,7 +11,7 @@ const Hero = () => {
             Create clever incentives and utility for all your decentralized
             products
           </h1>
-          <p className="text-grayscale-200 font-light text-base leading-7 tracking-wide">
+          <p className={`${styles.parraph}`}>
             By harnessing the power of blockchain technology, LockPay empowers
             businesses, projects, and brands to create customizable lockers
             tailored to their unique requirements.

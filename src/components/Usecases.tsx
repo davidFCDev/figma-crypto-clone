@@ -2,6 +2,7 @@ import { styles } from "../style";
 import { USE_CASE } from "../constants";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Usecases = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,7 +20,9 @@ const Usecases = () => {
   const currentUse = USE_CASE[currentIndex];
 
   return (
-    <div className={`${styles.paddingX} w-full my-48 flex flex-col gap-16`}>
+    <div
+      className={`${styles.paddingX} w-full my-48 flex flex-col gap-14 font-chakra`}
+    >
       <header className="flex justify-between">
         <div className="flex flex-col gap-5 items-start max-w-lg">
           <h2 className={`${styles.gradientText}`}>Use Cases</h2>
@@ -48,26 +51,69 @@ const Usecases = () => {
       </header>
 
       <main className="bg-grayscale-300 w-full">
-        <div
+        <motion.div
           key={currentUse.id}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 2 }}
+          className="flex justify-between pt-14 px-10 gap-10"
         >
-          <div>
-            <span>Use Case</span>
-            <h2>{currentUse.title}</h2>
-            <div>
-              <button onClick={handlePrevious}>
-                <GoArrowLeft />
+          <div className="flex flex-col justify-between items-start">
+            <div className="flex flex-col gap-4 items-start">
+              <span className="bg-zinc-500 py-[3px] px-2 rounded-full text-sm">
+                Use Case
+              </span>
+              <h2 className="text-3xl font-semibold">{currentUse.title}</h2>
+            </div>
+            <div className="flex gap-4">
+              <button
+                className="bg-blue-gradient-reverse p-[1.4px]"
+                onClick={handlePrevious}
+              >
+                <div className="flex h-12 w-full items-center justify-center bg-grayscale-300 back px-4 hover:bg-grayscale-400">
+                  <GoArrowLeft />
+                </div>
               </button>
-              <button onClick={handleNext}>
-                <GoArrowRight />
+              <button
+                className="bg-blue-gradient p-[1.4px]"
+                onClick={handleNext}
+              >
+                <div className="flex h-12 w-full items-center justify-center bg-grayscale-300 back px-4 hover:bg-grayscale-400">
+                  <GoArrowRight />
+                </div>
               </button>
             </div>
+
+            <img src={currentUse.image} alt={currentUse.title} className="max-w-lg"/>
           </div>
-        </div>
+
+          <div className="border-l border-gray-700 mt-5 mb-12"></div>
+
+          <div className=" flex flex-col gap-6 pb-16">
+            <div className="flex gap-5 items-start">
+              <img src="/cloud-icon.png" alt="cloud icon" />
+              <div className="flex flex-col gap-4">
+                <h3 className="text-xl">{currentUse.subtitle1}</h3>
+                <p className={`${styles.parraph} text-grayscale-200`}>{currentUse.description1}</p>
+              </div>
+            </div>
+            <div className="flex gap-5 items-start">
+              <img src="/cloud-icon.png" alt="cloud icon" />
+              <div className="flex flex-col gap-4">
+                <h3 className="text-xl">{currentUse.subtitle2}</h3>
+                <p className={`${styles.parraph} text-grayscale-200`}>{currentUse.description2}</p>
+              </div>
+            </div>
+            <div className="flex gap-5 items-start">
+              <img src="/cloud-icon.png" alt="cloud icon" />
+              <div className="flex flex-col gap-4">
+                <h3 className="text-xl">{currentUse.subtitle3}</h3>
+                <p className={`${styles.parraph} text-grayscale-200`}>{currentUse.description3}</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </main>
     </div>
   );

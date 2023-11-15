@@ -41,7 +41,7 @@ const Functionality = () => {
                     </div>
                   </div>
                   <hr className="border-gray-500 w-full" />
-                  <p className="text-grayscale-100 font-light text-base leading-7 tracking-wide pr-6">
+                  <p className={`${styles.parraph} pr-6`}>
                     {question.description}
                   </p>
                 </>

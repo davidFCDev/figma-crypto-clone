@@ -1,3 +1,4 @@
+import Faq from "../components/Faq"
 import Functionality from "../components/Functionality"
 import Hero from "../components/Hero"
 import Lockpay from "../components/Lockpay"
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Functionality />
       <Solution />
       <Usecases />
+      <Faq />
     </div>
   )
 }

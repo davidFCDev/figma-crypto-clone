@@ -4,6 +4,9 @@ import browser from "/browser-icon.png";
 import stats from "/stats-icon.png";
 import integration from "/integration-icon.png";
 import design from "/design-icon.png";
+import usecase1 from "/usecase1.png";
+import usecase2 from "/usecase2.png";
+import usecase3 from "/usecase3.png";
 
 export const FUNTIONALITY = [
   {
@@ -124,7 +127,7 @@ export const USE_CASE = [
   {
     id: 1,
     title: "Locker Use Cases",
-    image: "",
+    image: usecase1,
     subtitle1: "Subscription Services",
     description1:
       "Businesses offering subscription-based services can utilize the Locker functionality to allow customers to lock up tokens for a specific duration in exchange for access to their services. This ensures consistent revenue streams and incentivizes long-term commitment from customers.",
@@ -138,7 +141,7 @@ export const USE_CASE = [
   {
     id: 2,
     title: "Direct Pay Use Cases",
-    image: "  ",
+    image: usecase2,
     subtitle1: "E-commerce Integration",
     description1:
       "Online retailers and service providers can use the Direct Pay functionality to accept a wide range of cryptocurrencies as payment for their products or services. This expands their customer base to crypto enthusiasts and facilitates frictionless, secure, and borderless transactions.",
@@ -152,7 +155,7 @@ export const USE_CASE = [
   {
     id: 3,
     title: "Referral Use Cases",
-    image: "",
+    image: usecase3,
     subtitle1: "User Acquisition",
     description1:
       "Companies can incentivize their users to refer new customers by offering referral rewards through LockPay's Referral functionality. This not only encourages existing customers to promote the product or service but also helps in acquiring new customers through word-of-mouth marketing, driving organic growth.",

@@ -11,4 +11,5 @@ export const styles = {
 
   gradientText:
     "bg-gradient-to-r from-main-linear-blue to-main-linear-purple inline-block text-transparent bg-clip-text tracking-widest uppercase font-semibold text-lg",
+  parraph: "text-grayscale-100 font-light text-base leading-7 tracking-wide",
 };
