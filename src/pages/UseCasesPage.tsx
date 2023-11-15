@@ -1,9 +1,11 @@
-import React from 'react'
+import Use from "../components/usecase/Use";
 
 const UseCasesPage = () => {
   return (
-    <div>UseCasesPage</div>
-  )
-}
+    <div>
+      <Use />
+    </div>
+  );
+};
 
-export default UseCasesPage
+export default UseCasesPage;

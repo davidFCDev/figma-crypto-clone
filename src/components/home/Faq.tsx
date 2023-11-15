@@ -1,6 +1,6 @@
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
-import { styles } from "../style";
-import { FAQ } from "../constants";
+import { styles } from "../../style";
+import { FAQ } from "../../constants";
 import { useState } from "react";
 
 const Faq = () => {
@@ -12,9 +12,14 @@ const Faq = () => {
 
   return (
     <div
+      id="faq"
       className={`${styles.paddingX} flex w-full items-start justify-between py-16 relative`}
     >
-      <img src="/public/light2.png" alt="light" className="absolute left-0 top-20" />
+      <img
+        src="/public/light2.png"
+        alt="light"
+        className="absolute left-0 top-20"
+      />
 
       <div className="flex flex-col gap-5 items-start">
         <h2 className={`${styles.gradientText}`}>About lockpay</h2>

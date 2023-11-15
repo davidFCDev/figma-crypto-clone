@@ -1,12 +1,12 @@
-import Nav from "./components/Nav";
+import Nav from "./components/nav/Nav";
 import { Routes, Route } from "react-router-dom";
 import AboutPage from "./pages/AboutPage";
 import SolutionPage from "./pages/SolutionPage";
 import UseCasesPage from "./pages/UseCasesPage";
 import HomePage from "./pages/HomePage";
 import ScrollToTop from "./components/ScrollToTop";
-import Subscribe from "./components/Subscribe";
-import Footer from "./components/Footer";
+import Subscribe from "./components/footer/Subscribe";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (

@@ -1,5 +1,5 @@
-import { styles } from "../style";
-import { USE_CASE } from "../constants";
+import { styles } from "../../style";
+import { USE_CASE } from "../../constants";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -85,7 +85,11 @@ const Usecases = () => {
               </button>
             </div>
 
-            <img src={currentUse.image} alt={currentUse.title} className="max-w-lg"/>
+            <img
+              src={currentUse.image}
+              alt={currentUse.title}
+              className="max-w-lg"
+            />
           </div>
 
           <div className="border-l border-gray-700 mt-5 mb-12"></div>
@@ -95,21 +99,27 @@ const Usecases = () => {
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">{currentUse.subtitle1}</h3>
-                <p className={`${styles.parraph} text-grayscale-200`}>{currentUse.description1}</p>
+                <p className={`${styles.parraph} text-grayscale-200`}>
+                  {currentUse.description1}
+                </p>
               </div>
             </div>
             <div className="flex gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">{currentUse.subtitle2}</h3>
-                <p className={`${styles.parraph} text-grayscale-200`}>{currentUse.description2}</p>
+                <p className={`${styles.parraph} text-grayscale-200`}>
+                  {currentUse.description2}
+                </p>
               </div>
             </div>
             <div className="flex gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">{currentUse.subtitle3}</h3>
-                <p className={`${styles.parraph} text-grayscale-200`}>{currentUse.description3}</p>
+                <p className={`${styles.parraph} text-grayscale-200`}>
+                  {currentUse.description3}
+                </p>
               </div>
             </div>
           </div>

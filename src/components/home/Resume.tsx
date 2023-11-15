@@ -1,9 +1,9 @@
-import { styles } from "../style";
+import { styles } from "../../style";
 
 const Resume = () => {
   return (
     <div className={`${styles.paddingX} flex font-chakra`}>
-      <div className="w-full bg-grayscale-300 shadow shadow-gray-600 p-14 flex justify-between rounded">
+      <div className="w-full bg-grayscale-300 box-shadow p-14 flex justify-between rounded">
         <div className="flex flex-col gap-10 items-start max-w-xs">
           <img src="/turnover-icon.png" alt="Turnover" className="" />
           <div className="flex flex-col gap-4">

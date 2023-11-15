@@ -1,5 +1,5 @@
-import { styles } from "../style";
-import { FUNTIONALITY } from "../constants";
+import { styles } from "../../style";
+import { FUNTIONALITY } from "../../constants";
 import { useState } from "react";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { MdKeyboardArrowDown } from "react-icons/md";
@@ -14,11 +14,7 @@ const Functionality = () => {
   return (
     <div className="w-full justify-start items-start flex font-chakra pl-28 py-16 relative">
       <div className="flex flex-col gap-5 items-start pt-10 pr-4 w-[42%]">
-        <h2
-          className={`${styles.gradientText}`}
-        >
-          Functionality
-        </h2>
+        <h2 className={`${styles.gradientText}`}>Functionality</h2>
         <h1 className="text-5xl leading-tight font-semibold max-w-lg">
           LockPay Direct Payments
         </h1>

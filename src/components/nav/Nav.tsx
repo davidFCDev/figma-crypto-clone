@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { styles } from "../style";
-import ScrollToTopLink from "./ScrollToTopLink";
-import "../styles/nav.css";
+import { styles } from "../../style";
+import ScrollToTopLink from "../ScrollToTopLink";
+import "../../styles/nav.css";
 
 const Nav: React.FC = () => {
   const [toggle, setToggle] = useState(false);
@@ -24,13 +24,13 @@ const Nav: React.FC = () => {
         <ScrollToTopLink to="/" className="text-white">
           Home
         </ScrollToTopLink>
-        <Link to={"/timetable"} className="hover:text-white">
+        <Link to={"/about"} className="hover:text-white">
           About us
         </Link>
-        <Link to={"/prices"} className="hover:text-white">
+        <Link to={"/solution"} className="hover:text-white">
           Solution
         </Link>
-        <Link to={"/contact"} className="hover:text-white">
+        <Link to={"/usecases"} className="hover:text-white">
           Use cases
         </Link>
       </div>

@@ -1,5 +1,4 @@
-import { styles } from "../style";
-import "../styles/hero.css";
+import { styles } from "../../style";
 import Resume from "./Resume";
 
 const Hero = () => {

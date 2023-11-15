@@ -1,6 +1,6 @@
 import { useState, FC } from "react";
-import { styles } from "../style";
-import { SOLUTION } from "../constants";
+import { styles } from "../../style";
+import { SOLUTION } from "../../constants";
 
 interface SolutionProps {}
 
@@ -25,11 +25,7 @@ const Solution: FC<SolutionProps> = () => {
     <div className={`${styles.paddingX} w-full py-20 flex flex-col gap-16`}>
       <header className="flex justify-between">
         <div className="flex flex-col gap-3 items-start">
-          <h2
-            className={`${styles.gradientText}`}
-          >
-            Solution
-          </h2>
+          <h2 className={`${styles.gradientText}`}>Solution</h2>
           <h1 className="text-5xl leading-tight font-semibold">Our Solution</h1>
         </div>
 

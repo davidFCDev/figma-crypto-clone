@@ -7,6 +7,10 @@ import design from "/design-icon.png";
 import usecase1 from "/usecase1.png";
 import usecase2 from "/usecase2.png";
 import usecase3 from "/usecase3.png";
+import team1 from "/team1.png";
+import team2 from "/team2.png";
+import team3 from "/team3.png";
+import team4 from "/team4.png";
 
 export const FUNTIONALITY = [
   {
@@ -165,5 +169,32 @@ export const USE_CASE = [
     subtitle3: "Market Expansion",
     description3:
       "Referral programs can be used to foster a strong community around a project or brand. By rewarding users who successfully refer others, companies can encourage active engagement and create a network effect, where existing users become advocates and help expand the user base organically.",
+  },
+];
+
+export const TEAM = [
+  {
+    id: 1,
+    img: team1,
+    name: "Bondan Prabowo",
+    position: "CEO",
+  },
+  {
+    id: 2,
+    img: team2,
+    name: "Bayu Aji",
+    position: "Development",
+  },
+  {
+    id: 3,
+    img: team3,
+    name: "Agung Brandon",
+    position: "Artist",
+  },
+  {
+    id: 4,
+    img: team4,
+    name: "Aril Laso",
+    position: "UI/UX Designer",
   },
 ];

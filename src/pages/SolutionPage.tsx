@@ -1,9 +1,12 @@
-import React from 'react'
+import Detail from "../components/solution/Detail";
+import { styles } from "../style";
 
 const SolutionPage = () => {
   return (
-    <div>SolutionPage</div>
-  )
-}
+    <div className={`${styles.paddingX}`}>
+      <Detail />
+    </div>
+  );
+};
 
-export default SolutionPage
+export default SolutionPage;
