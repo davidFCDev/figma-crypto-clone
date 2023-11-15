@@ -23,6 +23,26 @@ body {
   color: white;
 }
 
+/** Top Path */
+
+.screen-path {
+  background-image: url("/path-top.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top right;
+  z-index: 1;
+}
+
+/** Bottom Path */
+
+.screen-path-bottom {
+  background-image: url("/path-bottom.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom left;
+  z-index: 1;
+}
+
 /** Gradient */
 
 .bg-blue-gradient {

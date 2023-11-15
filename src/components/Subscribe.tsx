@@ -8,7 +8,7 @@ const Subscribe = () => {
           Subscribe to our newsletter for latest updates
         </h2>
 
-        <form className="flex gap-20 bg-input items-center p-1">
+        <form className="flex gap-28 bg-input items-center p-1">
           <div className="flex items-center gap-2 pl-4">
             <img src="/public/message-icon.png" alt="Email" />
             <input
