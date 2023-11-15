@@ -1,9 +1,9 @@
-import cyber from "../../public/cyber-icon.png";
-import wallet from "../../public/wallet-icon.png";
-import browser from "../../public/browser-icon.png";
-import stats from "../../public/stats-icon.png";
-import integration from "../../public/integration-icon.png";
-import design from "../../public/design-icon.png";
+import cyber from "/cyber-icon.png";
+import wallet from "/wallet-icon.png";
+import browser from "/browser-icon.png";
+import stats from "/stats-icon.png";
+import integration from "/integration-icon.png";
+import design from "/design-icon.png";
 
 export const FUNTIONALITY = [
   {
@@ -122,6 +122,7 @@ export const SOLUTION = [
 
 export const USE_CASE = [
   {
+    id: 1,
     title: "Locker Use Cases",
     image: "",
     subtitle1: "Subscription Services",
@@ -135,6 +136,7 @@ export const USE_CASE = [
       "ICOs and token distribution events can utilize the Locker to implement token vesting schedules, ensuring that tokens are gradually released to investors or team members over a predetermined period. This feature enhances token distribution transparency and discourages market manipulation.",
   },
   {
+    id: 2,
     title: "Direct Pay Use Cases",
     image: "  ",
     subtitle1: "E-commerce Integration",
@@ -148,6 +150,7 @@ export const USE_CASE = [
       "Startups and entrepreneurs seeking funding can utilize Direct Pay to launch crowdfunding campaigns, enabling contributors to make donations or investments in cryptocurrencies. This opens up fundraising opportunities to a global audience, including cryptocurrency holders and enthusiasts interested in supporting innovative projects.",
   },
   {
+    id: 3,
     title: "Referral Use Cases",
     image: "",
     subtitle1: "User Acquisition",

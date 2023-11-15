@@ -15,7 +15,7 @@ const Functionality = () => {
     <div className="w-full justify-start items-start flex font-chakra pl-28 my-24 relative">
       <div className="flex flex-col gap-5 items-start pt-10 pr-4 w-[42%]">
         <h2
-          className={`${styles.gradientText} tracking-wider uppercase font-bold`}
+          className={`${styles.gradientText}`}
         >
           Functionality
         </h2>
@@ -41,7 +41,7 @@ const Functionality = () => {
                     </div>
                   </div>
                   <hr className="border-gray-500 w-full" />
-                  <p className="text-grayscale-100 font-light text-base leading-7 tracking-wide">
+                  <p className="text-grayscale-100 font-light text-base leading-7 tracking-wide pr-6">
                     {question.description}
                   </p>
                 </>
@@ -69,11 +69,11 @@ const Functionality = () => {
 
       <div className="absolute right-0 -top-28">
         <img
-          src="/public/locker.png"
+          src="/locker.png"
           alt="desktop"
           className="absolute z-20 bottom-52 right-32"
         />
-        <img src="/public/light.png" alt="light" className="relative w-full" />
+        <img src="/light.png" alt="light" className="relative w-full" />
       </div>
     </div>
   );

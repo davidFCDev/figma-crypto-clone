@@ -1,11 +1,19 @@
-import { useState } from "react";
+import { useState, FC } from "react";
 import { styles } from "../style";
 import { SOLUTION } from "../constants";
 
-const Solution = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+interface SolutionProps {}
 
-  const handleMouseEnter = (index) => {
+interface SolutionItem {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+const Solution: FC<SolutionProps> = () => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  const handleMouseEnter = (index: number) => {
     setHoveredIndex(index);
   };
 
@@ -15,10 +23,10 @@ const Solution = () => {
 
   return (
     <div className={`${styles.paddingX} w-full my-48 flex flex-col gap-16`}>
-      <div className="flex justify-between">
+      <header className="flex justify-between">
         <div className="flex flex-col gap-5 items-start">
           <h2
-            className={`${styles.gradientText} tracking-wider uppercase font-bold`}
+            className={`${styles.gradientText}`}
           >
             Solution
           </h2>
@@ -34,10 +42,10 @@ const Solution = () => {
           payment option, LockPay offers a seamless, secure, and user-friendly
           ecosystem that empowers users and fosters innovation.
         </p>
-      </div>
+      </header>
 
-      <div className="grid grid-cols-3 gap-y-10">
-        {SOLUTION.map((solution, index) => (
+      <main className="grid grid-cols-3">
+        {SOLUTION.map((solution: SolutionItem, index: number) => (
           <div
             key={index}
             className={` p-[1px] max-w-sm flex relative ${
@@ -45,6 +53,7 @@ const Solution = () => {
             }`}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
+            style={{ top: index * 10 + "px" }}
           >
             <div className="flex flex-col p-10 gap-10 items-start bg-grayscale-300 rounded shadow">
               <img src={solution.icon} alt="Turnover" className="" />
@@ -65,7 +74,7 @@ const Solution = () => {
             )}
           </div>
         ))}
-      </div>
+      </main>
     </div>
   );
 };

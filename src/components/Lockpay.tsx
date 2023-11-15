@@ -2,9 +2,9 @@ import { styles } from "../style";
 
 const Lockpay = () => {
   return (
-    <main className="w-full justify-center items-start flex flex-row-reverse font-chakra pr-28 mb-14">
-      <div className="flex flex-col gap-4 items-start pt-28 px-4 max-w-lg relative right-[6%]">
-        <h2 className={`${styles.gradientText} tracking-wider uppercase font-bold`}>Lockpay</h2>
+    <main className="w-full justify-end items-start flex flex-row-reverse font-chakra mb-14">
+      <div className="flex flex-col gap-4 items-start pt-28 px-4 max-w-xl relative right-[8%]">
+        <h2 className={`${styles.gradientText}`}>Lockpay</h2>
         <h1 className="text-5xl leading-tight font-semibold">
           Customizable lockers for any project’s use cases
         </h1>
@@ -16,17 +16,17 @@ const Lockpay = () => {
           specific intervals, enhancing security and providing businesses with
           greater control over their assets.
         </p>
-        <ul className="flex flex-col gap-3 font-light mt-2">
+        <ul className="flex flex-col gap-4 font-light mt-2">
           <li className="flex items-center gap-2">
-            <img src="/public/checkbox.png" alt="check" />
+            <img src="/checkbox.png" alt="check" />
             <span>Cutting-Edge Technology</span>
           </li>
           <li className="flex items-center gap-2">
-            <img src="/public/checkbox.png" alt="check" />
+            <img src="/checkbox.png" alt="check" />
             <span>Direct Payment Integration</span>
           </li>
           <li className="flex items-center gap-2">
-            <img src="/public/checkbox.png" alt="check" />
+            <img src="/checkbox.png" alt="check" />
             <span>Referral Program</span>
           </li>
         </ul>
@@ -37,7 +37,7 @@ const Lockpay = () => {
 
       <div className="relative flex">
         <img src="/mobile.png" alt="desktop" className="z-0 w-full"/>
-        <img src="/public/chart-left.png" alt="desktop"  className="absolute z-10 -bottom-[15%] right-[6%]"/>
+        <img src="/chart-left.png" alt="desktop"  className="absolute z-10 -bottom-[15%] right-[6%]"/>
       </div>
     </main>
   );
