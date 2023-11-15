@@ -22,9 +22,9 @@ const Solution: FC<SolutionProps> = () => {
   };
 
   return (
-    <div className={`${styles.paddingX} w-full my-48 flex flex-col gap-16`}>
+    <div className={`${styles.paddingX} w-full py-20 flex flex-col gap-16`}>
       <header className="flex justify-between">
-        <div className="flex flex-col gap-5 items-start">
+        <div className="flex flex-col gap-3 items-start">
           <h2
             className={`${styles.gradientText}`}
           >
@@ -48,14 +48,14 @@ const Solution: FC<SolutionProps> = () => {
         {SOLUTION.map((solution: SolutionItem, index: number) => (
           <div
             key={index}
-            className={` p-[1px] max-w-sm flex relative ${
+            className={` p-[1px] max-w-sm flex relative box-shadow ${
               hoveredIndex === index ? "bg-blue-gradient" : ""
             }`}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
-            style={{ top: index * 10 + "px" }}
+            style={{ top: index * 20 + "px" }}
           >
-            <div className="flex flex-col p-10 gap-10 items-start bg-grayscale-300 rounded shadow">
+            <div className="flex flex-col py-8 px-8 gap-10 items-start bg-grayscale-300 rounded shadow">
               <img src={solution.icon} alt="Turnover" className="" />
               <div className="flex flex-col gap-4">
                 <h3 className="text-lg tracking-wider">{solution.title}</h3>

@@ -16,6 +16,8 @@ export default {
         "2xlarge": "1920px",
       },
       colors: {
+        inputButton: "rgba(255, 255, 255, 0.349)",
+        input: "rgba(255, 255, 255, 0.13)",
         main: {
           linear: {
             blue: "#0CBAF1",

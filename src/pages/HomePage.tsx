@@ -3,6 +3,7 @@ import Functionality from "../components/Functionality"
 import Hero from "../components/Hero"
 import Lockpay from "../components/Lockpay"
 import Solution from "../components/Solution"
+import Testimonial from "../components/Testimonial"
 import Usecases from "../components/Usecases"
 
 const HomePage = () => {
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Solution />
       <Usecases />
       <Faq />
+      <Testimonial />
     </div>
   )
 }

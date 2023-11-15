@@ -5,6 +5,8 @@ import SolutionPage from "./pages/SolutionPage";
 import UseCasesPage from "./pages/UseCasesPage";
 import HomePage from "./pages/HomePage";
 import ScrollToTop from "./components/ScrollToTop";
+import Subscribe from "./components/Subscribe";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/solution" element={<SolutionPage />} />
         <Route path="/usecases" element={<UseCasesPage />} />
       </Routes>
+      <Subscribe />
+      <Footer />
     </div>
   );
 }

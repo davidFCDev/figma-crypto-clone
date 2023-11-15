@@ -5,7 +5,7 @@ import Resume from "./Resume";
 const Hero = () => {
   return (
     <main className="flex flex-col">
-      <div className="w-full justify-between items-start flex font-chakra pl-28 pt-40 screen-path">
+      <div className="w-full justify-between items-start flex font-chakra pl-28 pt-40 pb-16 screen-path">
         <div className="flex flex-col gap-6 items-start pt-10 pr-4">
           <h1 className="text-6xl font-semibold">
             Create clever incentives and utility for all your decentralized

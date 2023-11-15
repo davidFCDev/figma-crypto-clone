@@ -11,16 +11,17 @@ const Faq = () => {
   };
 
   return (
-    <div className={`${styles.paddingX} flex w-full items-start justify-between`}>
+    <div
+      className={`${styles.paddingX} flex w-full items-start justify-between py-16 relative`}
+    >
+      <img src="/public/light2.png" alt="light" className="absolute left-0 top-20" />
 
       <div className="flex flex-col gap-5 items-start">
         <h2 className={`${styles.gradientText}`}>About lockpay</h2>
         <h1 className="text-5xl leading-tight font-semibold">
           Frequently Asked Questions
         </h1>
-        <span>
-          Still need help? Chat to us.
-        </span>
+        <span>Still need help? Chat to us.</span>
       </div>
 
       <div className="flex flex-col gap-6 w-[65%] mt-12">

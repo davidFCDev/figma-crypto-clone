@@ -1,7 +1,9 @@
-
-
 const Testimonial = () => {
-  return <div>Testimonial</div>;
+  return (
+    <div className="w-full flex justify-center items-center py-28">
+      <img src="/public/testimonial.png" alt="testimonial" />
+    </div>
+  );
 };
 
 export default Testimonial;

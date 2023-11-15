@@ -21,10 +21,10 @@ const Usecases = () => {
 
   return (
     <div
-      className={`${styles.paddingX} w-full my-48 flex flex-col gap-14 font-chakra`}
+      className={`${styles.paddingX} w-full py-40 flex flex-col gap-14 font-chakra`}
     >
       <header className="flex justify-between">
-        <div className="flex flex-col gap-5 items-start max-w-lg">
+        <div className="flex flex-col gap-5 items-start max-w-xl">
           <h2 className={`${styles.gradientText}`}>Use Cases</h2>
           <h1 className="text-5xl leading-tight font-semibold">
             Unlocking the Potential of LockPay

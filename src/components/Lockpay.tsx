@@ -2,8 +2,8 @@ import { styles } from "../style";
 
 const Lockpay = () => {
   return (
-    <main className="w-full justify-end items-start flex flex-row-reverse font-chakra mb-14">
-      <div className="flex flex-col gap-4 items-start pt-28 px-4 max-w-xl relative right-[8%]">
+    <main className="w-full justify-start items-start flex flex-row-reverse font-chakra py-16 relative">
+      <div className="flex flex-col gap-4 items-start max-w-lg relative right-[13%]">
         <h2 className={`${styles.gradientText}`}>Lockpay</h2>
         <h1 className="text-5xl leading-tight font-semibold">
           Customizable lockers for any project’s use cases
@@ -35,7 +35,7 @@ const Lockpay = () => {
         </button>
       </div>
 
-      <div className="relative flex">
+      <div className="absolute flex left-0 -top-10">
         <img src="/mobile.png" alt="desktop" className="z-0 w-full" />
         <img
           src="/chart-left.png"
