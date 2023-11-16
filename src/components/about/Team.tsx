@@ -3,8 +3,15 @@ import { styles } from "../../style";
 import { TEAM } from "../../constants";
 import { useState } from "react";
 
+interface TeamMember {
+  id: number;
+  name: string;
+  position: string;
+  img: string;
+}
+
 const Team = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % TEAM.length);
@@ -44,7 +51,7 @@ const Team = () => {
       </div>
 
       <div className="flex justify-between w-full">
-        {TEAM.map((member, index) => (
+        {TEAM.map((member: TeamMember, index: number) => (
           <div
             className={` p-[1px] ${
               index === currentIndex ? "bg-blue-gradient" : "bg-transparent"
@@ -57,7 +64,6 @@ const Team = () => {
               <img src={member.img} alt={member.name} className="" />
               <div className="image-overlay"></div>
               <div
-                id="hide"
                 className={`absolute z-20 bottom-3 text-center w-full ${
                   index === currentIndex ? "" : "hidden"
                 }`}

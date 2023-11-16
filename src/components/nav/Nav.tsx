@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { styles } from "../../style";
 import ScrollToTopLink from "../ScrollToTopLink";
-import "../../styles/nav.css";
 
 const Nav: React.FC = () => {
   const [toggle, setToggle] = useState(false);
