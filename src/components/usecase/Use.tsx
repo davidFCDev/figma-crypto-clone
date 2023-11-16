@@ -3,11 +3,11 @@ import SectionTitle from "../SectionTitle";
 
 const Use = () => {
   return (
-    <div className="w-full pt-56 mb-20">
+    <div className="w-full pt-56 mb-20 flex flex-col">
       <SectionTitle section="Use Cases" />
 
-      <section className="flex items-start relative">
-        <div className="pl-28 flex flex-col gap-8 py-28 relative">
+      <section className="flex items-start relative pt-28">
+        <div className="pl-28 flex flex-col gap-8 relative">
           <div className="flex flex-col gap-5 items-start">
             <h2 className={`${styles.gradientText}`}>Use case</h2>
             <h1 className="text-5xl leading-tight font-semibold">
@@ -43,7 +43,7 @@ const Use = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 items-start">
+            <div className="flex gap-5 items-start degraded-text">
               <img src="/cloud-off-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">Token Vesting</h3>
@@ -57,7 +57,7 @@ const Use = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 items-start">
+            <div className="flex gap-5 items-start small:hidden">
               <img src="/cloud-off-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">Asset Locking</h3>
@@ -74,10 +74,10 @@ const Use = () => {
           </div>
         </div>
 
-        <img src="use1.png" alt="usecase1" className="absolute right-0" />
+        <img src="use1.png" alt="usecase1" className="absolute right-0 top-0" />
       </section>
 
-      <section className="flex flex-col gap-16 relative">
+      <section className="flex flex-col gap-16 py-28">
         <div className="flex flex-col gap-5 items-center">
           <h2 className={`${styles.gradientText}`}>Use case</h2>
           <h1 className="text-5xl leading-tight font-semibold">
@@ -85,11 +85,11 @@ const Use = () => {
           </h1>
         </div>
 
-        <div className="pr-28 flex items-start justify-end">
+        <div className="pr-28 flex items-start justify-end relative">
           <img
             src="use2.png"
             alt="usecase2"
-            className="absolute left-0 top-10"
+            className="absolute left-0 -top-32"
           />
 
           <div className="flex flex-col gap-6 max-w-2xl pr-4">
@@ -177,10 +177,10 @@ const Use = () => {
               </div>
             </div>
             <div className="flex gap-5 items-start">
-              <img src="/cloud-off-icon.png" alt="cloud icon" />
-              <div className="flex flex-col gap-4">
+              <img src="/cloud-off-icon.png" alt="cloud icon" className="opacity-10"/>
+              <div className="flex flex-col gap-4 opacity-10">
                 <h3 className="text-xl">Market Expansion</h3>
-                <p className={`${styles.parraph} text-grayscale-200`}>
+                <p className={`${styles.parraph} text-grayscale-200 small:hidden`}>
                   {" "}
                   Referral programs can be used to foster a strong community
                   around a project or brand. By rewarding users who successfully
