@@ -3,7 +3,7 @@ import SectionTitle from "../SectionTitle";
 
 const About = () => {
   return (
-    <div className="font-chakra w-full pt-48 mb-20">
+    <div className="w-full pt-48 mb-20">
       <SectionTitle section="About us" />
 
       <main className="flex py-28 pl-28 relative">

@@ -10,17 +10,21 @@ import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <div>
-      <Nav />
+    <div className="relative">
+      <div className="z-50 relative">
+        <Nav />
+      </div>
       <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/solution" element={<SolutionPage />} />
-        <Route path="/usecases" element={<UseCasesPage />} />
-      </Routes>
-      <Subscribe />
-      <Footer />
+      <div className="z-0 relative">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/solution" element={<SolutionPage />} />
+          <Route path="/usecases" element={<UseCasesPage />} />
+        </Routes>
+        <Subscribe />
+        <Footer />
+      </div>
     </div>
   );
 }

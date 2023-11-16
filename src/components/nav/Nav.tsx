@@ -13,7 +13,7 @@ const Nav: React.FC = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} py-8 w-full flex items-center justify-between font-chakra text-white fixed z-50`}
+      className={`${styles.paddingX} bg-grayscale-500 py-8 w-full flex items-center justify-between text-white fixed screen-path`}
     >
       <Link to="#">
         <img src="/logo.png" alt="logo" />
