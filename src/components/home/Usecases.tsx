@@ -125,6 +125,17 @@ const Usecases = () => {
           </div>
         </motion.div>
       </main>
+
+      <div className="flex justify-center">
+        {USE_CASE.map((_, index) => (
+          <div
+            key={index}
+            className={`h-1 mx-1 rounded  ${
+              index === currentIndex ? "w-4 bg-gray-300" : "w-2 bg-gray-500"
+            }`}
+          />
+        ))}
+      </div>
     </div>
   );
 };

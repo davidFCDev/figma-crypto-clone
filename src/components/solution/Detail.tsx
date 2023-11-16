@@ -3,24 +3,24 @@ import SectionTitle from "../SectionTitle";
 
 const Detail = () => {
   return (
-    <main className="font-chakra w-full pt-48  relative flex flex-col screen-path">
+    <main className="font-chakra w-full pt-48 pb-20  relative flex flex-col screen-path">
       <SectionTitle section="Detail Solution" />
 
       <section className="flex flex-col justify-center items-center relative">
         <div className="flex absolute top-20 items-start justify-center">
           <img
-            src="/public/circles.png"
+            src="/circles.png"
             alt="circles"
             className="relative z-0 top-0"
           />
           <img
-            src="/public/services.png"
+            src="/services.png"
             alt="services"
             className="absolute z-10 top-4 right-2"
           />
         </div>
 
-        <div className="flex flex-col items-center gap-8 max-w-2xl">
+        <div className="flex flex-col items-center gap-8 max-w-2xl mt-[20%]">
           <div className="flex flex-col gap-5 items-center">
             <h2 className={`${styles.gradientText}`}>Solution</h2>
             <h1 className="text-5xl leading-tight font-semibold">

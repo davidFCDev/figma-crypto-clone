@@ -11,6 +11,7 @@ import team1 from "/team1.png";
 import team2 from "/team2.png";
 import team3 from "/team3.png";
 import team4 from "/team4.png";
+import security1 from "/security1.png";
 
 export const FUNTIONALITY = [
   {
@@ -196,5 +197,33 @@ export const TEAM = [
     img: team4,
     name: "Aril Laso",
     position: "UI/UX Designer",
+  },
+];
+
+export const SECURITY = [
+  {
+    id: 1,
+    title: "Enhanced Asset Security",
+    image: security1,
+    subtitle1: "Customizable Lockers",
+    description1: [
+      "Users can create lockers tailored to their specific asset security requirements.",
+      "Lockers can be customized based on duration, unlocking intervals, and other parameters.",
+    ],
+    subtitle2: "Unparalleled Flexibility",
+    description2: [
+      "LockPay's locker functionality offers unmatched flexibility in securing digital assets.",
+      "Users have control over the locking and unlocking parameters, allowing them to adapt to evolving needs.",
+    ],
+    subtitle3: "Advanced Security Measures",
+    description3: [
+      "LockPay's locker provides a high level of security for digital assets.",
+      "Assets can be securely locked up for a predetermined duration, reducing the risk of unauthorized access.",
+    ],
+    subtitle4: "Verification of Token Staking",
+    description4: [
+      "LockPay offers the ability to verify staking of specific tokens within lockers.",
+      "This additional layer of security ensures that only legitimate token holders can access locked assets.",
+    ],
   },
 ];

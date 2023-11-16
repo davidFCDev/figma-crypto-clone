@@ -16,7 +16,7 @@ const Faq = () => {
       className={`${styles.paddingX} flex w-full items-start justify-between py-16 relative`}
     >
       <img
-        src="/public/light2.png"
+        src="/light2.png"
         alt="light"
         className="absolute left-0 top-20"
       />

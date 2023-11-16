@@ -1,7 +1,7 @@
 const Testimonial = () => {
   return (
     <div className="w-full flex justify-center items-center py-28">
-      <img src="/public/testimonial.png" alt="testimonial" />
+      <img src="/testimonial.png" alt="testimonial" />
     </div>
   );
 };
