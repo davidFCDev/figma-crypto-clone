@@ -3,7 +3,7 @@ import SectionTitle from "../SectionTitle";
 
 const Use = () => {
   return (
-    <div className="w-full pt-48 mb-20">
+    <div className="w-full pt-56 mb-20">
       <SectionTitle section="Use Cases" />
 
       <section className="flex items-start relative">

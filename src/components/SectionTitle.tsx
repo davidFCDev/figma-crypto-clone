@@ -10,7 +10,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ section }) => {
     <div className="flex flex-col gap-20 px-28">
       <div className="relative flex flex-col items-center gap-10">
         <img
-          src="/public/elipse2.png"
+          src="/elipse2.png"
           alt="elipse"
           className="absolute -top-[90%] z-10"
         />
@@ -22,7 +22,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ section }) => {
         </p>
       </div>
 
-      <img src="/public/line.png" alt="line" className="w-full" />
+      <img src="/line.png" alt="line" className="w-full" />
     </div>
   );
 };
