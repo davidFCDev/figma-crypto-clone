@@ -21,18 +21,18 @@ const Usecases = () => {
 
   return (
     <div
-      className={`${styles.paddingX} w-full py-40 flex flex-col gap-14 font-chakra`}
+      className={`${styles.paddingX} w-full py-40 flex flex-col gap-14`}
     >
-      <header className="flex justify-between">
-        <div className="flex flex-col gap-5 items-start max-w-xl">
+      <header className="flex flex-col small:flex-row small:justify-between">
+        <div className="flex flex-col gap-5 items-start small:max-w-xl">
           <h2 className={`${styles.gradientText}`}>Use Cases</h2>
-          <h1 className="text-5xl leading-tight font-semibold">
+          <h1 className="text-3xl small:text-5xl leading-tight font-semibold">
             Unlocking the Potential of LockPay
           </h1>
         </div>
 
-        <div className="flex flex-col items-start gap-10 mt-6 max-w-2xl">
-          <p className="text-grayscale-100 font-light text-base leading-7 tracking-wide pr-20 mt-6">
+        <div className="flex flex-col items-start gap-10 mt-6 small:max-w-2xl">
+          <p className="text-grayscale-100 font-light text-base leading-7 tracking-wide small:pr-20 mt-6">
             These use cases highlight the versatility and potential applications
             of LockPay's Locker, Direct Pay, and Referral functionalities,
             showcasing how businesses from various industries can leverage these
@@ -40,7 +40,7 @@ const Usecases = () => {
             growth.
           </p>
 
-          <button className="bg-blue-gradient p-[1.4px]">
+          <button className="bg-blue-gradient p-[1.4px] hidden small:block">
             <div className="flex h-12 w-full items-center justify-center bg-grayscale-400 back px-8">
               <span className="text-base text-white tracking-widest uppercase">
                 See all
@@ -57,21 +57,21 @@ const Usecases = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 2 }}
-          className="flex justify-between pt-14 px-10 gap-10"
+          className="flex flex-col small:flex-row justify-between pt-14 px-6 small:px-10 gap-10"
         >
-          <div className="flex flex-col justify-between items-start">
+          <div className="flex flex-col gap-5 small:gap-0 justify-between items-start">
             <div className="flex flex-col gap-4 items-start">
               <span className="bg-zinc-500 py-[3px] px-2 rounded-full text-sm">
                 Use Case
               </span>
-              <h2 className="text-3xl font-semibold">{currentUse.title}</h2>
+              <h2 className="text-2xl small:text-3xl font-semibold">{currentUse.title}</h2>
             </div>
             <div className="flex gap-4">
               <button
                 className="bg-blue-gradient-reverse p-[1.4px]"
                 onClick={handlePrevious}
               >
-                <div className="flex h-12 w-full items-center justify-center bg-grayscale-300 back px-4 hover:bg-grayscale-400">
+                <div className="flex h-10 small:h-12 w-full items-center justify-center bg-grayscale-300 back px-3 small:px-4 hover:bg-grayscale-400">
                   <GoArrowLeft />
                 </div>
               </button>
@@ -79,7 +79,7 @@ const Usecases = () => {
                 className="bg-blue-gradient p-[1.4px]"
                 onClick={handleNext}
               >
-                <div className="flex h-12 w-full items-center justify-center bg-grayscale-300 back px-4 hover:bg-grayscale-400">
+                <div className="flex h-10 small:h-12 w-full items-center justify-center bg-grayscale-300 back px-3 small:px-4 hover:bg-grayscale-400">
                   <GoArrowRight />
                 </div>
               </button>
@@ -88,14 +88,14 @@ const Usecases = () => {
             <img
               src={currentUse.image}
               alt={currentUse.title}
-              className="max-w-lg"
+              className="w-full small:max-w-lg pt-6 small:pt-0"
             />
           </div>
 
-          <div className="border-l border-gray-700 mt-5 mb-12"></div>
+          <div className="hidden small:block border-l border-gray-700 mt-5 mb-12"></div>
 
           <div className=" flex flex-col gap-6 pb-16">
-            <div className="flex gap-5 items-start">
+            <div className="flex flex-col small:flex-row gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">{currentUse.subtitle1}</h3>
@@ -104,7 +104,7 @@ const Usecases = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 items-start">
+            <div className="flex flex-col small:flex-row gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">{currentUse.subtitle2}</h3>
@@ -113,7 +113,7 @@ const Usecases = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 items-start">
+            <div className="flex flex-col small:flex-row gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">{currentUse.subtitle3}</h3>

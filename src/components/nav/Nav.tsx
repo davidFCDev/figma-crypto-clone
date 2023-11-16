@@ -16,7 +16,7 @@ const Nav: React.FC = () => {
       className={`${styles.paddingX} bg-grayscale-500 py-8 w-full flex items-center justify-between text-white fixed screen-path`}
     >
       <Link to="#">
-        <img src="/logo.png" alt="logo" />
+        <img src="/logo.png" alt="logo" className="w-28 small:w-full" />
       </Link>
 
       <div className="hidden sm:flex text-lg text-gray-300 gap-14">
@@ -52,10 +52,13 @@ const Nav: React.FC = () => {
               transition={{ duration: 0.5 }}
               className={`${styles.paddingX} bg-grayscale-500 pt-8 pb-20 screen-path absolute top-0 right-0 min-w-full min-h-screen justify-center items-center flex flex-col`}
             >
-
               <div className="w-full flex items-center justify-between text-white">
                 <Link to="#">
-                  <img src="/logo.png" alt="logo" />
+                  <img
+                    src="/logo.png"
+                    alt="logo"
+                    className="w-28 small:w-full"
+                  />
                 </Link>
                 <div className="" onClick={handleToggle}>
                   {toggle ? (
@@ -83,9 +86,9 @@ const Nav: React.FC = () => {
                 </Link>
               </ul>
 
-              <button className="bg-blue-gradient p-[1.4px] w-full">
-                <div className="flex h-20 w-full items-center justify-center bg-grayscale-500 back px-8">
-                  <span className="text-base text-white tracking-widest uppercase">
+              <button className="bg-blue-gradient p-[1px] w-full">
+                <div className="flex h-16 w-full items-center justify-center bg-grayscale-500 back px-8">
+                  <span className={`${styles.parraph} text-white`}>
                     Start Now
                   </span>
                 </div>
