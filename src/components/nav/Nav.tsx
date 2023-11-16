@@ -34,20 +34,13 @@ const Nav: React.FC = () => {
         </Link>
       </div>
 
-      <button className="bg-blue-gradient p-[1.4px] ">
-        <div className="flex h-14 w-full items-center justify-center bg-grayscale-400 back px-5">
-          <span className="text-lg text-white">Start Now</span>
-        </div>
-      </button>
-
       <aside className="sm:hidden">
-        <div id="menuToggle">
-          <input id="checkbox" type="checkbox" onClick={handleToggle} />
-          <label className="toggle" htmlFor="checkbox">
-            <div className="bar bar--top"></div>
-            <div className="bar bar--middle"></div>
-            <div className="bar bar--bottom"></div>
-          </label>
+        <div className="" onClick={handleToggle}>
+          {toggle ? (
+            <img src="/open.png" alt="open" />
+          ) : (
+            <img src="/close.png" alt="close" />
+          )}
         </div>
 
         <AnimatePresence>
@@ -57,22 +50,46 @@ const Nav: React.FC = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 50 }}
               transition={{ duration: 0.5 }}
-              className="px-2 py-20 bg-dimWhite absolute top-[4.4rem] right-[0rem] min-w-[100px] h-screen rounded font-creatoBold uppercase"
+              className={`${styles.paddingX} bg-grayscale-500 pt-8 pb-20 screen-path absolute top-0 right-0 min-w-full min-h-screen justify-center items-center flex flex-col`}
             >
-              <ul className="list-none flex gap-2 justify-end flex-1 flex-col tracking-widest text-sm">
-                <ScrollToTopLink to="/" className="link underline-hover">
+
+              <div className="w-full flex items-center justify-between text-white">
+                <Link to="#">
+                  <img src="/logo.png" alt="logo" />
+                </Link>
+                <div className="" onClick={handleToggle}>
+                  {toggle ? (
+                    <img src="/open.png" alt="open" />
+                  ) : (
+                    <img src="/close.png" alt="close" />
+                  )}
+                </div>
+              </div>
+
+              <ul
+                className={`${styles.parraph} list-none flex gap-16 justify-center items-center flex-1 flex-col tracking-widest`}
+              >
+                <ScrollToTopLink to="/" className="text-white">
                   Home
                 </ScrollToTopLink>
-                <Link to={"/timetable"} className="link underline-hover">
+                <Link to={"/about"} className="">
                   About us
                 </Link>
-                <Link to={"/prices"} className="link underline-hover">
+                <Link to={"/solution"} className="">
                   Solution
                 </Link>
-                <Link to={"/contact"} className="link underline-hover">
+                <Link to={"/usecases"} className="">
                   Use cases
                 </Link>
               </ul>
+
+              <button className="bg-blue-gradient p-[1.4px] w-full">
+                <div className="flex h-20 w-full items-center justify-center bg-grayscale-500 back px-8">
+                  <span className="text-base text-white tracking-widest uppercase">
+                    Start Now
+                  </span>
+                </div>
+              </button>
             </motion.div>
           )}
         </AnimatePresence>

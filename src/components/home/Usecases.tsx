@@ -40,7 +40,7 @@ const Usecases = () => {
             growth.
           </p>
 
-          <button className="bg-blue-gradient p-[1.4px] ">
+          <button className="bg-blue-gradient p-[1.4px]">
             <div className="flex h-12 w-full items-center justify-center bg-grayscale-400 back px-8">
               <span className="text-base text-white tracking-widest uppercase">
                 See all
