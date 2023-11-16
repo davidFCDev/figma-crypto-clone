@@ -55,6 +55,15 @@ body {
   );
 }
 
+.bg-blue-gradient:hover {
+  background: rgb(12, 186, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 186, 241, 1) 0%,
+    rgba(233, 92, 233, 1) 52%
+  );
+}
+
 .bg-blue-gradient-reverse {
   background: rgba(233, 92, 233);
   background: linear-gradient(

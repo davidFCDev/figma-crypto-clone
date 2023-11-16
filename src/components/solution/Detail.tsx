@@ -1,4 +1,5 @@
 import { styles } from "../../style";
+import Button from "../Button";
 import SectionTitle from "../SectionTitle";
 
 const Detail = () => {
@@ -88,9 +89,7 @@ const Detail = () => {
             LockPay to meet their evolving asset security needs effectively.
           </p>
 
-          <button className="bg-blue-gradient px-7 py-3 uppercase font-semibold tracking-widest">
-            Contact us
-          </button>
+          <Button text="Contact us" />
         </div>
       </section>
     </main>

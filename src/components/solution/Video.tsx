@@ -1,4 +1,5 @@
 import { styles } from "../../style";
+import Button from "../Button";
 
 const Solution = () => {
   return (
@@ -15,9 +16,7 @@ const Solution = () => {
 
       <img src="/video.png" alt="video" className="w-full" />
 
-      <button className="bg-blue-gradient px-7 py-3 uppercase font-semibold tracking-widest">
-        Get Started
-      </button>
+      <Button text="Get started" />
     </div>
   );
 };

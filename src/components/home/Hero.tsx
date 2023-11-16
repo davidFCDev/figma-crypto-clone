@@ -1,4 +1,5 @@
 import { styles } from "../../style";
+import Button from "../Button";
 import Resume from "./Resume";
 
 const Hero = () => {
@@ -15,9 +16,7 @@ const Hero = () => {
             businesses, projects, and brands to create customizable lockers
             tailored to their unique requirements.
           </p>
-          <button className="bg-blue-gradient px-7 py-3 uppercase font-semibold tracking-widest">
-            Discover more
-          </button>
+          <Button text="Discover more" />
         </div>
 
         <img src="/desktop.png" alt="desktop" className="w-[62%]" />

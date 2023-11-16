@@ -1,4 +1,5 @@
 import { styles } from "../../style";
+import Button from "../Button";
 
 const Lockpay = () => {
   return (
@@ -30,9 +31,7 @@ const Lockpay = () => {
             <span>Referral Program</span>
           </li>
         </ul>
-        <button className="bg-blue-gradient px-10 py-4 mt-4 uppercase font-semibold tracking-widest text-sm">
-          Read more
-        </button>
+        <Button text="Read more" />
       </div>
 
       <div className="absolute flex left-0 -top-10">
