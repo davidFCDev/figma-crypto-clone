@@ -2,8 +2,29 @@ import { styles } from "../../style";
 import Button from "../Button";
 import SectionTitle from "../SectionTitle";
 import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Detail = () => {
+  const TEXTOS = [
+    "Comprehensive Solution",
+    "Seamless Integration",
+    "Asset Security",
+    "Cryptocurrency Payments",
+    "Versatility & Customizability",
+    "Potential for Growth",
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  const handleClickBack = () => {
+    setIndex((prevIndex) => (prevIndex - 1 + TEXTOS.length) % TEXTOS.length);
+  };
+
+  const handleClickForward = () => {
+    setIndex((prevIndex) => (prevIndex + 1) % TEXTOS.length);
+  };
+
   return (
     <main className="w-full pt-56 pb-20 relative">
       <SectionTitle section="Detail Solution" />
@@ -21,44 +42,57 @@ const Detail = () => {
             className="absolute z-10 top-4 right-2 hidden small:block"
           />
 
-          <img
-            src="/circles-responsive.png"
-            alt="circles"
-            className="relative z-0 top-0 block small:hidden"
-          />
+          {/***** Images Responsive *****/}
+            <img
+              src="/circles-responsive.png"
+              alt="circles"
+              className="relative z-0 top-0 block small:hidden"
+            />
 
-          <div className="absolute z-10 top-4 flex items-center small:hidden">
-            <img
-              src="/esphera-off.png"
-              alt="services"
-              className="w-60 relative z-10 top-20 -left-20"
-            />
-            <img
-              src="/esphera.png"
-              alt="services"
-              className="w-60 relative z-10"
-            />
-            <img
-              src="/esphera-off.png"
-              alt="services"
-              className="w-60 relative z-10 top-20 -right-20"
-            />
-          </div>
+            <div className="absolute z-10 top-4 flex items-center small:hidden">
+              {[0, 1, 2].map((offset) => (
+                <div
+                  key={`element-${offset}`}
+                  className={`flex items-center justify-center relative z-10 ${
+                    offset === 0
+                      ? "-left-14 top-8"
+                      : offset === 2
+                      ? "-right-14 top-8"
+                      : ""
+                  }`}
+                >
+                  <img
+                    src={`/esphera${offset === 1 ? "" : "-off"}.png`}
+                    alt="services"
+                    className="relative w-52"
+                  />
+                  <motion.h3
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 50 }}
+                    transition={{ duration: 0.5 }}
+                    className="absolute z-20 text-center text-xs max-w-fit px-2"
+                  >
+                    {TEXTOS[(index + offset) % TEXTOS.length]}
+                  </motion.h3>
+                </div>
+              ))}
+            </div>
         </div>
 
-        <div className="flex flex-col items-center gap-8 small:max-w-2xl mt-[74%] small:mt-[20%] px-6 small:px-0">
+        <div className="flex flex-col items-center gap-8 small:max-w-2xl mt-[74%] small:mt-[20%] px-6 small:px-0 z-30">
           <div className="flex gap-10 small:hidden text-2xl">
-            <button>
+            <button onClick={handleClickBack}>
               <IoMdArrowBack />
             </button>
-            <button>
+            <button onClick={handleClickForward}>
               <IoMdArrowForward />
             </button>
           </div>
 
           <div className="flex flex-col gap-5 items-center text-center">
             <h2 className={`${styles.gradientText}`}>Solution</h2>
-            <h1 className="text-5xl small:text-5xl leading-tight font-semibold">
+            <h1 className="text-4xl small:text-5xl leading-tight font-semibold">
               Enhanced Asset Security
             </h1>
           </div>

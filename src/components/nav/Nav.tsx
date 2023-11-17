@@ -1,14 +1,23 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { styles } from "../../style";
 import ScrollToTopLink from "../ScrollToTopLink";
 
 const Nav: React.FC = () => {
+  const navigate = useNavigate();
   const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => {
     setToggle(!toggle);
+  };
+
+  const handleLinkClick = (path: string) => {
+    handleToggle();
+
+    setTimeout(() => {
+      navigate(path);
+    }, 300);
   };
 
   return (
@@ -78,16 +87,26 @@ const Nav: React.FC = () => {
               <ul
                 className={`${styles.parraph} list-none flex gap-16 justify-center items-center flex-1 flex-col tracking-widest`}
               >
-                <ScrollToTopLink to="/" className="text-white">
+                <Link
+                  to="/"
+                  className="text-white"
+                  onClick={() => handleLinkClick("/")}
+                >
                   Home
-                </ScrollToTopLink>
-                <Link to={"/about"} className="">
+                </Link>
+                <Link to={"/about"} onClick={() => handleLinkClick("/about")}>
                   About us
                 </Link>
-                <Link to={"/solution"} className="">
+                <Link
+                  to={"/solution"}
+                  onClick={() => handleLinkClick("/solution")}
+                >
                   Solution
                 </Link>
-                <Link to={"/usecases"} className="">
+                <Link
+                  to={"/usecases"}
+                  onClick={() => handleLinkClick("/usecases")}
+                >
                   Use cases
                 </Link>
               </ul>

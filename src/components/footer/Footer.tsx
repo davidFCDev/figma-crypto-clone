@@ -4,13 +4,11 @@ import ScrollToTopLink from "../ScrollToTopLink";
 
 const Footer = () => {
   return (
-    <footer
-      className="flex flex-col gap-20 pt-40 pb-20 w-full screen-path-bottom px-10 small:px-28"
-    >
+    <footer className="flex flex-col gap-20 pt-40 pb-20 w-full screen-path-bottom px-10 small:px-28">
       <div className="flex flex-col small:flex-row justify-between w-full gap-14 small:gap-0 ">
         <div className="flex flex-col justify-between items-start">
           <div className="flex items-start">
-            <img src="/logo.png" alt="logo" className="w-48 small:w-full"/>
+            <img src="/logo.png" alt="logo" className="w-48 small:w-full" />
           </div>
           <div className="gap-4 hidden small:flex">
             <a href="#">
@@ -77,16 +75,28 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-5">
             <p className="text-white font-semibold">Need Help?</p>
-            <p className="flex gap-2 items-center">
-              <img src="/location-icon.png" alt="location-icon" />
+            <p className="flex gap-2 items-start small:items-center">
+              <img
+                src="/location-icon.png"
+                alt="location-icon"
+                className="pt-1 small:pt-0"
+              />
               1901 Thornridge Cir. Shiloh, Hawaii
             </p>
-            <p className="flex gap-2 items-center">
-              <img src="/mail-icon.png" alt="email-icon" />
+            <p className="flex gap-2 items-start small:items-center">
+              <img
+                src="/mail-icon.png"
+                alt="email-icon"
+                className="pt-1 small:pt-0"
+              />
               support@lockpay.com
             </p>
-            <p className="flex gap-2 items-center">
-              <img src="/phone-icon.png" alt="phone-icon" />
+            <p className="flex gap-2 items-start small:items-center">
+              <img
+                src="/phone-icon.png"
+                alt="phone-icon"
+                className="pt-1 small:pt-0"
+              />
               +1 808-123-1234
             </p>
           </div>

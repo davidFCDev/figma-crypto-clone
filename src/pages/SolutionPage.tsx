@@ -4,7 +4,7 @@ import Detail from "../components/solution/Detail";
 
 const SolutionPage = () => {
   return (
-    <div className="screen-path">
+    <div className="screen-path overflow-x-hidden">
       <Detail />
       {/* <Solution />
       <Description /> */}
