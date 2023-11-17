@@ -29,7 +29,7 @@ const Solution: FC<SolutionProps> = () => {
           <h1 className="text-3xl small:text-5xl leading-tight font-semibold">Our Solution</h1>
         </div>
 
-        <div className="flex flex-col gap-2 text-grayscale-100 font-light text-base leading-7 tracking-wide small:max-w-2xl small:px-5 small:mr-20 mt-6">
+        <div className="flex flex-col gap-4 small:gap-2 text-grayscale-100 font-light text-base leading-7 tracking-wide small:max-w-2xl small:px-5 small:mr-20 mt-6">
           <p>
             LockPay presents a comprehensive solution that addresses the
             challenges associated with asset security and cryptocurrency
@@ -60,7 +60,7 @@ const Solution: FC<SolutionProps> = () => {
               <img src={solution.icon} alt="Turnover" className="" />
               <div className="flex flex-col gap-4">
                 <h3 className="text-base small:text-lg tracking-wider">{solution.title}</h3>
-                <p className="text-grayscale-200 font-light text-xs small:text-sm leading-7 tracking-wide">
+                <p className="text-grayscale-200 font-light text-sm small:text-lg leading-7 tracking-wide">
                   {solution.description}
                 </p>
               </div>

@@ -8,7 +8,7 @@ const Solution = () => {
     >
       <div className="flex flex-col gap-5 items-center small:max-w-5xl small:px-4">
         <h2 className={`${styles.gradientText}`}>Our Solution</h2>
-        <h1 className="text-4xl small:text-5xl leading-tight font-semibold">
+        <h1 className="text-4xl small:text-5xl leading-tight font-semibold px-2 small:px-0">
           LockPay offers a seamless, secure, and user-friendly ecosystem that
           empowers users and fosters innovation.
         </h1>

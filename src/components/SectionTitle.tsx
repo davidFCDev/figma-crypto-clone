@@ -22,7 +22,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ section }) => {
         </p>
       </div>
 
-      <img src="/line.png" alt="line" className="w-full" />
+      <img src="/line.png" alt="line" className="w-full px-6 small:px-0" />
     </div>
   );
 };

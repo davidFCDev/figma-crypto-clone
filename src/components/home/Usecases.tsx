@@ -20,13 +20,11 @@ const Usecases = () => {
   const currentUse = USE_CASE[currentIndex];
 
   return (
-    <div
-      className={`${styles.paddingX} w-full py-40 flex flex-col gap-14`}
-    >
+    <div className={`${styles.paddingX} w-full py-40 flex flex-col gap-14`}>
       <header className="flex flex-col small:flex-row small:justify-between">
         <div className="flex flex-col gap-5 items-start small:max-w-xl">
           <h2 className={`${styles.gradientText}`}>Use Cases</h2>
-          <h1 className="text-3xl small:text-5xl leading-tight font-semibold">
+          <h1 className="text-4xl small:text-5xl leading-tight font-semibold">
             Unlocking the Potential of LockPay
           </h1>
         </div>
@@ -51,20 +49,24 @@ const Usecases = () => {
       </header>
 
       <main className="bg-grayscale-300 w-full">
-        <motion.div
+        <div
           key={currentUse.id}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 2 }}
           className="flex flex-col small:flex-row justify-between pt-14 px-6 small:px-10 gap-10"
         >
-          <div className="flex flex-col gap-5 small:gap-0 justify-between items-start">
+          <div className="flex flex-col gap-5 small:gap-0 justify-between items-start w-full">
             <div className="flex flex-col gap-4 items-start">
               <span className="bg-zinc-500 py-[3px] px-2 rounded-full text-sm">
                 Use Case
               </span>
-              <h2 className="text-2xl small:text-3xl font-semibold">{currentUse.title}</h2>
+              <motion.h2
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 3 }}
+                className="text-3xl font-semibold"
+              >
+                {currentUse.title}
+              </motion.h2>
             </div>
             <div className="flex gap-4">
               <button
@@ -85,7 +87,11 @@ const Usecases = () => {
               </button>
             </div>
 
-            <img
+            <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 3 }}
               src={currentUse.image}
               alt={currentUse.title}
               className="w-full small:max-w-lg pt-6 small:pt-0"
@@ -94,7 +100,13 @@ const Usecases = () => {
 
           <div className="hidden small:block border-l border-gray-700 mt-5 mb-12"></div>
 
-          <div className=" flex flex-col gap-6 pb-16">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 3 }}
+            className=" flex flex-col gap-6 pb-16"
+          >
             <div className="flex flex-col small:flex-row gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
@@ -122,8 +134,8 @@ const Usecases = () => {
                 </p>
               </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </main>
 
       <div className="flex justify-center">

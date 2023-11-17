@@ -12,10 +12,10 @@ const Functionality = () => {
   };
 
   return (
-    <div className="w-full justify-start items-start flex flex-col-reverse small:flex-row small:pl-28 pb-16 pt-0 small:py-16 relative -top-10">
+    <div className="w-full justify-start small:items-center flex flex-col-reverse small:flex-row small:pl-28 pb-16 pt-0 small:py-16 relative -top-10 small:top-0">
       <div className="flex flex-col gap-5 items-start pt-10 px-6 small:pr-4 small:w-[42%]">
         <h2 className={`${styles.gradientText}`}>Functionality</h2>
-        <h1 className="text-3xl small:text-5xl leading-tight font-semibold small:max-w-lg">
+        <h1 className="text-4xl small:text-5xl leading-tight font-semibold small:max-w-lg">
           LockPay Direct Payments
         </h1>
 
@@ -28,7 +28,7 @@ const Functionality = () => {
                     className="flex items-center justify-between hover:cursor-pointer"
                     onClick={() => handleClick(index)}
                   >
-                    <h3 className="text-base small:text-xl">{question.title}</h3>
+                    <h3 className="text-lg small:text-xl">{question.title}</h3>
                     <div
                       onClick={() => handleClick(index)}
                       className="hover:cursor-pointer"
@@ -37,7 +37,9 @@ const Functionality = () => {
                     </div>
                   </div>
                   <hr className="border-gray-500 w-full" />
-                  <p className={`${styles.parraph} pr-6 text-sm small:text-base`}>
+                  <p
+                    className={`${styles.parraph} pr-6 text-base small:text-lg`}
+                  >
                     {question.description}
                   </p>
                 </>
@@ -47,7 +49,7 @@ const Functionality = () => {
                     className="flex items-center justify-between hover:cursor-pointer"
                     onClick={() => handleClick(index)}
                   >
-                    <h3 className="text-base small:text-xl">{question.title}</h3>
+                    <h3 className="text-lg small:text-xl">{question.title}</h3>
                     <div
                       onClick={() => handleClick(index)}
                       className="hover:cursor-pointer"
@@ -62,13 +64,14 @@ const Functionality = () => {
           ))}
         </div>
       </div>
-
-      <div className="small:absolute small:right-0 small:top-0">
-        <img
+      
+      <img
           src="/locker.png"
           alt="desktop"
-          className="absolute z-20 small:bottom-52 small:right-20"
+          className="relative z-20 small:pt-20"
         />
+
+      <div className="small:absolute small:right-0 small:top-0 w-full">
         <img src="/light.png" alt="light" className="relative w-full" />
       </div>
     </div>

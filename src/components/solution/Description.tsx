@@ -33,7 +33,7 @@ const Description = () => {
         </div>
         <div className="flex flex-col gap-4 pt-6 small:pt-14 small:max-w-xl">
           <p
-            className={`${styles.parraph} text-grayscale-200 text-sm small:text-base`}
+            className={`${styles.parraph} text-grayscale-200 text-base small:text-lg`}
           >
             LockPay presents a comprehensive solution that addresses the
             challenges associated with asset security and cryptocurrency
@@ -42,7 +42,7 @@ const Description = () => {
             transactions.{" "}
           </p>
           <p
-            className={`${styles.parraph} text-grayscale-200 text-sm small:text-base`}
+            className={`${styles.parraph} text-grayscale-200 text-base small:text-lg`}
           >
             By combining the power of a flexible decentralized locker with a
             direct payment option, LockPay offers a seamless, secure, and
@@ -52,20 +52,22 @@ const Description = () => {
       </header>
 
       <main className="flex flex-col my-10 small:my-20 gap-10">
-        <motion.div
+        <div
           key={current.id}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 2 }}
-          className="flex flex-col small:flex-row justify-between pt-10 px-4 small:px-10 gap-5 small:gap-10 bg-grayscale-300 w-full"
+          className="flex flex-col small:flex-row justify-between pt-10 px-5 small:px-10 gap-5 small:gap-10 bg-grayscale-300 w-full"
         >
           <div className="flex flex-col justify-between items-start gap-6">
             <div className="flex flex-col gap-5">
               <div className="flex flex-col gap-4 items-start max-w-xs">
-                <h2 className="text-3xl small:text-4xl font-semibold leading-tight">
+                <motion.h2
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 2 }}
+                  className="text-3xl small:text-4xl font-semibold leading-tight"
+                >
                   {current.title}
-                </h2>
+                </motion.h2>
               </div>
               <div className="flex gap-4">
                 <button
@@ -87,7 +89,11 @@ const Description = () => {
               </div>
             </div>
 
-            <img
+            <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 2 }}
               src={current.image}
               alt={current.title}
               className="small:pb-10"
@@ -96,7 +102,13 @@ const Description = () => {
 
           <div className="border-l border-gray-700 mt-5 mb-12 hidden small:block"></div>
 
-          <div className=" flex flex-col gap-6 pb-16">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 2 }}
+            className=" flex flex-col gap-6 pb-16"
+          >
             <div className="flex flex-col small:flex-row gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-3">
@@ -201,8 +213,8 @@ const Description = () => {
                 </p>
               </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
 
         <div className="flex justify-center">
           {SECURITY.map((_, index) => (

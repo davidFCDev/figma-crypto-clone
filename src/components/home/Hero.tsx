@@ -4,10 +4,10 @@ import Resume from "./Resume";
 
 const Hero = () => {
   return (
-    <main className="flex flex-col min-h-screen w-full">
-      <div className="w-full justify-between items-start gap-12 small:gap-0 flex flex-col small:flex-row small:pl-28 pt-28 small:pt-40 px-6 small:px-0 screen-path">
-        <div className="flex flex-col gap-6 items-start pt-10 small:pr-4">
-          <h1 className="text-4xl small:text-6xl font-semibold tracking-tight small:tracking-normal ">
+    <main className="flex flex-col min-h-screen w-full small:mb-32">
+      <div className="w-full justify-between items-start gap-12 small:gap-0 flex flex-col small:flex-row small:pl-28 pt-28 small:pt-40 screen-path">
+        <div className="flex flex-col gap-6 items-start pt-10 small:pr-4 px-6 small:px-0">
+          <h1 className="text-5xl small:text-6xl font-semibold tracking-tighter small:tracking-normal ">
             Create clever incentives and utility for all your decentralized
             products
           </h1>
@@ -24,9 +24,9 @@ const Hero = () => {
 
       </div>
 
-      <div className="relative small:bottom-36">
+
         <Resume />
-      </div>
+
     </main>
   );
 };

@@ -23,10 +23,10 @@ const Faq = () => {
 
       <div className="flex flex-col gap-5 items-start">
         <h2 className={`${styles.gradientText}`}>About lockpay</h2>
-        <h1 className="text-3xl small:text-5xl leading-tight font-semibold">
+        <h1 className="text-4xl small:text-5xl leading-tight font-semibold">
           Frequently Asked Questions
         </h1>
-        <span className="text-sm small:text-base text-grayscale-200">Still need help? Chat to us.</span>
+        <span className="text-base small:text-lg text-grayscale-200">Still need help? Chat to us.</span>
       </div>
 
       <div className="flex flex-col gap-6 small:w-[65%] mt-12">
@@ -47,7 +47,7 @@ const Faq = () => {
                   </div>
                 </div>
                 <hr className="border-gray-500 w-full" />
-                <p className={`${styles.parraph} pr-6 text-sm small:text-lg`}>
+                <p className={`${styles.parraph} pr-6 text-base small:text-lg`}>
                   {question.description}
                 </p>
               </>

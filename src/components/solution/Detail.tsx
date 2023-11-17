@@ -3,7 +3,7 @@ import Button from "../Button";
 import SectionTitle from "../SectionTitle";
 import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Detail = () => {
   const TEXTOS = [
@@ -16,13 +16,16 @@ const Detail = () => {
   ];
 
   const [index, setIndex] = useState(0);
+  const [animationKey, setAnimationKey] = useState(0);
 
   const handleClickBack = () => {
-    setIndex((prevIndex) => (prevIndex - 1 + TEXTOS.length) % TEXTOS.length);
+    setIndex((prevIndex) => (prevIndex + 1) % TEXTOS.length);
+    setAnimationKey((prevKey) => prevKey + 1); // Trigger animation
   };
 
   const handleClickForward = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % TEXTOS.length);
+    setIndex((prevIndex) => (prevIndex - 1 + TEXTOS.length) % TEXTOS.length);
+    setAnimationKey((prevKey) => prevKey + 1); // Trigger animation
   };
 
   return (
@@ -50,33 +53,35 @@ const Detail = () => {
           />
 
           <div className="absolute z-10 top-4 flex items-center small:hidden">
-            {[0, 1, 2].map((offset) => (
-              <div
-                key={`element-${offset}`}
-                className={`flex items-center justify-center relative z-10 ${
-                  offset === 0
-                    ? "-left-14 top-8"
-                    : offset === 2
-                    ? "-right-14 top-8"
-                    : ""
-                }`}
-              >
-                <img
-                  src={`/esphera${offset === 1 ? "" : "-off"}.png`}
-                  alt="services"
-                  className="relative w-52"
-                />
-                <motion.h3
-                  initial={{ opacity: 0, x: 50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: 50 }}
-                  transition={{ duration: 0.5 }}
-                  className="absolute z-20 text-center text-xs max-w-fit px-2"
+            <AnimatePresence key={animationKey}>
+              {[0, 1, 2].map((offset) => (
+                <div
+                  key={`element-${offset}`}
+                  className={`flex items-center justify-center relative z-10 ${
+                    offset === 0
+                      ? "-left-14 top-8"
+                      : offset === 2
+                      ? "-right-14 top-8"
+                      : ""
+                  }`}
                 >
-                  {TEXTOS[(index + offset) % TEXTOS.length]}
-                </motion.h3>
-              </div>
-            ))}
+                  <img
+                    src={`/esphera${offset === 1 ? "" : "-off"}.png`}
+                    alt="services"
+                    className="relative w-52"
+                  />
+                  <motion.h3
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="absolute z-20 text-center text-xs max-w-fit px-2"
+                  >
+                    {TEXTOS[(index + offset) % TEXTOS.length]}
+                  </motion.h3>
+                </div>
+              ))}
+            </AnimatePresence>
           </div>
         </div>
 

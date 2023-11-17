@@ -6,7 +6,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ text }) => {
   return (
-    <button className="bg-blue-gradient px-7 py-3 uppercase font-semibold tracking-widest text-sm small:text-base rounded-sm">
+    <button className="bg-blue-gradient px-10 py-4 uppercase font-semibold tracking-widest text-sm small:text-base rounded-sm">
       {text}
     </button>
   );

@@ -14,14 +14,14 @@ const Lockpay = () => {
         />
       </div>
 
-      <div className="block small:hidden">
-        <img src="/mobile-responsive.png" alt="desktop" className="" />
+      <div className="flex w-full small:hidden">
+        <img src="/mobile-responsive.png" alt="desktop" className="w-full" />
       </div>
 
       
       <div className="flex flex-col px-6 small:px-0 gap-4 items-start max-w-lg relative small:right-[14%] -top-10 small:top-0">
         <h2 className={`${styles.gradientText}`}>Lockpay</h2>
-        <h1 className="text-3xl small:text-5xl leading-tight font-semibold">
+        <h1 className="text-4xl small:text-5xl leading-tight font-semibold">
           Customizable lockers for any project’s use cases
         </h1>
         <p className={`${styles.parraph}`}>
@@ -32,7 +32,7 @@ const Lockpay = () => {
           specific intervals, enhancing security and providing businesses with
           greater control over their assets.
         </p>
-        <ul className="flex flex-col gap-4 font-light mt-2">
+        <ul className="flex flex-col gap-4 font-light my-4">
           <li className="flex items-center gap-2">
             <img src="/checkbox.png" alt="check" />
             <span>Cutting-Edge Technology</span>
@@ -46,7 +46,7 @@ const Lockpay = () => {
             <span>Referral Program</span>
           </li>
         </ul>
-        <Button text="Read more" />
+        <Button text="Read more"/>
       </div>
 
     </main>

@@ -11,7 +11,7 @@ const Resume = () => {
               Flexible Locking Mechanisms
             </h3>
             <p
-              className={`${styles.parraph} text-xs small:text-base text-grayscale-200`}
+              className={`${styles.parraph} text-sm small:text-base text-grayscale-200`}
             >
               This unique feature allows for the application of discounts on
               transactions, incentivizing token holders and fostering engagement
@@ -26,7 +26,7 @@ const Resume = () => {
               Direct Payment Integration
             </h3>
             <p
-              className={`${styles.parraph} text-xs small:text-base text-grayscale-200`}
+              className={`${styles.parraph} text-sm small:text-base text-grayscale-200`}
             >
               Customers can seamlessly make payments using their preferred
               digital currencies, eliminating the friction associated with
@@ -39,7 +39,7 @@ const Resume = () => {
           <div className="flex flex-col gap-4">
             <h3 className="text-base small:text-lg">Referral Program</h3>
             <p
-              className={`${styles.parraph} text-xs small:text-base text-grayscale-200`}
+              className={`${styles.parraph} text-sm small:text-base text-grayscale-200`}
             >
               With LockPay, businesses can embrace the future of decentralized
               solutions, empowering themselves with enhanced security,
