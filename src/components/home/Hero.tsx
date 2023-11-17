@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <main className="flex flex-col min-h-screen w-full ">
       <div className="w-full justify-between items-start gap-12 small:gap-0 flex flex-col small:flex-row small:pl-28 pt-28 small:pt-40  screen-path">
-        <div className="flex flex-col gap-6 items-start pt-10 small:pr-4 px-6">
+        <div className="flex flex-col gap-6 items-start pt-10 small:pr-4 pr-6">
           <h1 className="text-5xl small:text-6xl font-semibold tracking-tight small:tracking-normal ">
             Create clever incentives and utility for all your decentralized
             products

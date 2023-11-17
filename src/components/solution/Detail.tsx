@@ -1,10 +1,11 @@
 import { styles } from "../../style";
 import Button from "../Button";
 import SectionTitle from "../SectionTitle";
+import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 
 const Detail = () => {
   return (
-    <main className="font-chakra w-full pt-56 pb-20 relative flex flex-col ">
+    <main className="w-full pt-56 pb-20 relative">
       <SectionTitle section="Detail Solution" />
 
       <section className="flex flex-col justify-center items-center relative">
@@ -12,19 +13,52 @@ const Detail = () => {
           <img
             src="/circles.png"
             alt="circles"
-            className="relative z-0 top-0"
+            className="relative z-0 top-0 hidden small:block"
           />
           <img
             src="/services.png"
             alt="services"
-            className="absolute z-10 top-4 right-2"
+            className="absolute z-10 top-4 right-2 hidden small:block"
           />
+
+          <img
+            src="/circles-responsive.png"
+            alt="circles"
+            className="relative z-0 top-0 block small:hidden"
+          />
+
+          <div className="absolute z-10 top-4 flex items-center small:hidden">
+            <img
+              src="/esphera-off.png"
+              alt="services"
+              className="w-60 relative z-10 top-20 -left-20"
+            />
+            <img
+              src="/esphera.png"
+              alt="services"
+              className="w-60 relative z-10"
+            />
+            <img
+              src="/esphera-off.png"
+              alt="services"
+              className="w-60 relative z-10 top-20 -right-20"
+            />
+          </div>
         </div>
 
-        <div className="flex flex-col items-center gap-8 max-w-2xl mt-[20%]">
-          <div className="flex flex-col gap-5 items-center">
+        <div className="flex flex-col items-center gap-8 small:max-w-2xl mt-[74%] small:mt-[20%] px-6 small:px-0">
+          <div className="flex gap-10 small:hidden text-2xl">
+            <button>
+              <IoMdArrowBack />
+            </button>
+            <button>
+              <IoMdArrowForward />
+            </button>
+          </div>
+
+          <div className="flex flex-col gap-5 items-center text-center">
             <h2 className={`${styles.gradientText}`}>Solution</h2>
-            <h1 className="text-5xl leading-tight font-semibold">
+            <h1 className="text-5xl small:text-5xl leading-tight font-semibold">
               Enhanced Asset Security
             </h1>
           </div>
@@ -46,7 +80,7 @@ const Detail = () => {
             bullet list and text with hading.
           </p>
 
-          <div className="flex flex-col gap-4 bg-grayscale-300 box-shadow rounded-sm p-12">
+          <div className="flex flex-col gap-4 bg-grayscale-300 box-shadow rounded-sm p-6 small:p-12 z-30">
             <p>Benefits and Features</p>
             <ul className="flex flex-col gap-4 font-light mt-2">
               <li className="flex items-baseline gap-4">
@@ -89,7 +123,9 @@ const Detail = () => {
             LockPay to meet their evolving asset security needs effectively.
           </p>
 
-          <Button text="Contact us" />
+          <div className="flex items-start w-full">
+            <Button text="Contact us" />
+          </div>
         </div>
       </section>
     </main>

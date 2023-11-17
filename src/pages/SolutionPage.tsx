@@ -1,13 +1,13 @@
-import Description from "../components/solution/Description";
+// import Description from "../components/solution/Description";
 import Detail from "../components/solution/Detail";
-import Solution from "../components/solution/Video";
+// import Solution from "../components/solution/Video";
 
 const SolutionPage = () => {
   return (
     <div className="screen-path">
       <Detail />
-      <Solution />
-      <Description />
+      {/* <Solution />
+      <Description /> */}
     </div>
   );
 };

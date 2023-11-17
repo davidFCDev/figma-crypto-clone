@@ -34,6 +34,12 @@ const Nav: React.FC = () => {
         </Link>
       </div>
 
+      <button className="bg-blue-gradient p-[1.26px] hidden small:block">
+        <div className="flex h-12 w-full items-center justify-center bg-grayscale-500 px-8">
+          <span className={`${styles.parraph} text-white`}>Start Now</span>
+        </div>
+      </button>
+
       <aside className="sm:hidden">
         <div className="" onClick={handleToggle}>
           {toggle ? (
@@ -87,7 +93,7 @@ const Nav: React.FC = () => {
               </ul>
 
               <button className="bg-blue-gradient p-[1px] w-full">
-                <div className="flex h-16 w-full items-center justify-center bg-grayscale-500 back px-8">
+                <div className="flex h-16 w-full items-center justify-center bg-grayscale-500 px-8">
                   <span className={`${styles.parraph} text-white`}>
                     Start Now
                   </span>

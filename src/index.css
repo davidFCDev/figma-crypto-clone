@@ -18,7 +18,9 @@
   scroll-behavior: smooth;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -41,13 +43,11 @@ body {
 }
 
 @media (max-width: 767px) {
-  /* Estilos específicos para teléfonos móviles */
   .screen-path {
-    background-size: auto ;
+    background-size: auto;
     background-position: top;
   }
 }
-
 
 /** Bottom Path */
 
@@ -60,9 +60,8 @@ body {
 }
 
 @media (max-width: 767px) {
-  /* Estilos específicos para teléfonos móviles */
   .screen-path-bottom {
-    background-size: auto ;
+    background-size: auto;
     background-position: bottom;
   }
 }
@@ -77,7 +76,6 @@ body {
     rgba(233, 92, 233, 1) 82%
   );
 }
-
 
 .bg-blue-gradient-reverse {
   background: rgba(233, 92, 233);
@@ -113,6 +111,26 @@ body {
 .member-info {
   position: relative;
   z-index: 2;
+}
+
+/** Team Arrow Button */
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  transform: scale(0.5);
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-pagination-bullet {
+  background: transparent; /* Cambia el color deseado */
 }
 
 /** Collapse Navbar */
@@ -160,4 +178,10 @@ body {
   background: linear-gradient(to bottom, transparent, #03060e);
   pointer-events: none;
   mix-blend-mode: multiply;
+}
+
+@media (max-width: 767px) {
+  .degraded-text::before {
+    background: linear-gradient(to bottom, transparent, transparent);
+  }
 }

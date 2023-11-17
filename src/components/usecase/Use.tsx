@@ -6,17 +6,17 @@ const Use = () => {
     <div className="w-full pt-56 mb-20 flex flex-col">
       <SectionTitle section="Use Cases" />
 
-      <section className="flex items-start relative pt-28">
-        <div className="pl-28 flex flex-col gap-8 relative">
+      <section className="flex flex-col-reverse small:flex-row items-start relative pt-2 small:pt-28">
+        <div className="small:pl-28 flex flex-col gap-8 relative px-6 small:px-0 -top-20 small:top-0">
           <div className="flex flex-col gap-5 items-start">
             <h2 className={`${styles.gradientText}`}>Use case</h2>
-            <h1 className="text-5xl leading-tight font-semibold">
+            <h1 className="text-4xl small:text-5xl leading-tight font-semibold">
               Locker Use Cases
             </h1>
           </div>
 
-          <div className="flex flex-col gap-6 max-w-2xl pr-4">
-            <div className="flex gap-5 items-start">
+          <div className="flex flex-col gap-6 small:max-w-2xl small:pr-4">
+            <div className="flex flex-col small:flex-row gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">Subscription Services</h3>
@@ -29,8 +29,17 @@ const Use = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 items-start">
-              <img src="/cloud-off-icon.png" alt="cloud icon" />
+            <div className="flex flex-col small:flex-row gap-5 items-start">
+              <img
+                src="/cloud-off-icon.png"
+                alt="cloud icon"
+                className="hidden small:block"
+              />
+              <img
+                src="/cloud-icon.png"
+                alt="cloud icon"
+                className="block small:hidden"
+              />
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">Staking Discounts</h3>
                 <p className={`${styles.parraph} text-grayscale-200`}>
@@ -43,8 +52,18 @@ const Use = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 items-start degraded-text">
-              <img src="/cloud-off-icon.png" alt="cloud icon" />
+            <div className="flex flex-col small:flex-row gap-5 items-start degraded-text">
+              <img
+                src="/cloud-off-icon.png"
+                alt="cloud icon"
+                className="hidden small:block"
+              />
+              <img
+                src="/cloud-icon.png"
+                alt="cloud icon"
+                className="block small:hidden"
+              />
+
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">Token Vesting</h3>
                 <p className={`${styles.parraph} text-grayscale-200`}>
@@ -57,8 +76,17 @@ const Use = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 items-start small:hidden">
-              <img src="/cloud-off-icon.png" alt="cloud icon" />
+            <div className="flex flex-col small:flex-row gap-5 items-start small:hidden">
+              <img
+                src="/cloud-off-icon.png"
+                alt="cloud icon"
+                className="hidden small:block"
+              />
+              <img
+                src="/cloud-icon.png"
+                alt="cloud icon"
+                className="block small:hidden"
+              />
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">Asset Locking</h3>
                 <p className={`${styles.parraph} text-grayscale-200`}>
@@ -74,26 +102,47 @@ const Use = () => {
           </div>
         </div>
 
-        <img src="use1.png" alt="usecase1" className="absolute right-0 top-0" />
+        <img
+          src="/use1.png"
+          alt="usecase1"
+          className="absolute right-0 top-0 hidden small:block"
+        />
+        <img
+          src="/usecase1-responsive.png"
+          alt="usecase1"
+          className="block small:hidden w-full"
+        />
       </section>
 
-      <section className="flex flex-col gap-16 py-28">
-        <div className="flex flex-col gap-5 items-center">
+      <section className="flex flex-col gap-16 py-0 small:py-28">
+        <div className="flex-col gap-5 items-center hidden small:flex">
           <h2 className={`${styles.gradientText}`}>Use case</h2>
-          <h1 className="text-5xl leading-tight font-semibold">
+          <h1 className="text-4xl small:text-5xl leading-tight font-semibold">
             Direct Pay Use Cases
           </h1>
         </div>
 
-        <div className="pr-28 flex items-start justify-end relative">
+        <div className="small:pr-28 flex flex-col small:flex-row items-start justify-end relative">
           <img
-            src="use2.png"
+            src="/use2.png"
             alt="usecase2"
-            className="absolute left-0 -top-32"
+            className="absolute left-0 -top-32 hidden small:block"
           />
 
-          <div className="flex flex-col gap-6 max-w-2xl pr-4">
-            <div className="flex gap-5 items-start">
+          <img
+            src="/usecase2-responsive.png"
+            alt="usecase2"
+            className="block small:hidden w-full"
+          />
+
+          <div className="flex flex-col gap-6 small:max-w-2xl small:pr-4 px-6 small:px-0 ">
+            <div className="flex-col gap-5 items-start flex small:hidden">
+              <h2 className={`${styles.gradientText}`}>Use case</h2>
+              <h1 className="text-4xl small:text-5xl leading-tight font-semibold pb-4">
+                Direct Pay Use Cases
+              </h1>
+            </div>
+            <div className="flex flex-col small:flex-row gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">E-commerce Integration</h3>
@@ -106,7 +155,7 @@ const Use = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 items-start">
+            <div className="flex flex-col small:flex-row gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">Cross-Border Payments</h3>
@@ -120,7 +169,7 @@ const Use = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 items-start">
+            <div className="flex flex-col small:flex-row gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">Crowdfunding Campaigns</h3>
@@ -139,17 +188,17 @@ const Use = () => {
         </div>
       </section>
 
-      <section className="flex items-start relative">
-        <div className="pl-28 flex flex-col gap-8 py-28 relative">
+      <section className="flex flex-col-reverse small:flex-row items-start relative pt-10 small:pt-0">
+        <div className="small:pl-28 flex flex-col gap-8 py-0 small:py-28 relative px-6 small:px-0 -top-16">
           <div className="flex flex-col gap-5 items-start">
             <h2 className={`${styles.gradientText}`}>Use case</h2>
-            <h1 className="text-5xl leading-tight font-semibold">
+            <h1 className="text-4xl small:text-5xl leading-tight font-semibold">
               Referral Use Cases
             </h1>
           </div>
 
-          <div className="flex flex-col gap-6 max-w-2xl pr-4">
-            <div className="flex gap-5 items-start">
+          <div className="flex flex-col gap-6 small:max-w-2xl small:pr-4">
+            <div className="flex flex-col small:flex-row gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">User Acquisition</h3>
@@ -163,8 +212,17 @@ const Use = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 items-start">
-              <img src="/cloud-off-icon.png" alt="cloud icon" />
+            <div className="flex flex-col small:flex-row gap-5 items-start">
+              <img
+                src="/cloud-off-icon.png"
+                alt="cloud icon"
+                className="hidden small:block"
+              />
+              <img
+                src="/cloud-icon.png"
+                alt="cloud icon"
+                className="block small:hidden"
+              />
               <div className="flex flex-col gap-4">
                 <h3 className="text-xl">Community Building</h3>
                 <p className={`${styles.parraph} text-grayscale-200`}>
@@ -176,11 +234,22 @@ const Use = () => {
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 items-start">
-              <img src="/cloud-off-icon.png" alt="cloud icon" className="opacity-10"/>
-              <div className="flex flex-col gap-4 opacity-10">
+            <div className="flex flex-col small:flex-row gap-5 items-start">
+              <img
+                src="/cloud-off-icon.png"
+                alt="cloud icon"
+                className="hidden small:block"
+              />
+              <img
+                src="/cloud-icon.png"
+                alt="cloud icon"
+                className="block small:hidden"
+              />
+              <div className="flex flex-col gap-4 small:opacity-10">
                 <h3 className="text-xl">Market Expansion</h3>
-                <p className={`${styles.parraph} text-grayscale-200 small:hidden`}>
+                <p
+                  className={`${styles.parraph} text-grayscale-200 small:hidden`}
+                >
                   {" "}
                   Referral programs can be used to foster a strong community
                   around a project or brand. By rewarding users who successfully
@@ -193,7 +262,16 @@ const Use = () => {
           </div>
         </div>
 
-        <img src="use3.png" alt="usecase3" className="absolute right-0" />
+        <img
+          src="/use3.png"
+          alt="usecase3"
+          className="absolute right-0 hidden small:block"
+        />
+        <img
+          src="/usecase3-responsive.png"
+          alt="usecase3"
+          className="block small:hidden w-full"
+        />
       </section>
     </div>
   );

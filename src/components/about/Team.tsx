@@ -23,7 +23,7 @@ const Team = () => {
 
   return (
     <div
-      className={`${styles.paddingX} w-full flex flex-col gap-14 mb-40 font-chakra`}
+      className={`${styles.paddingX} w-full flex flex-col gap-14 mb-40`}
     >
       <div className="w-full flex justify-between items-end">
         <div className="flex flex-col gap-2 items-start">
@@ -50,11 +50,11 @@ const Team = () => {
         </div>
       </div>
 
-      <div className="flex justify-between w-full">
+      <div className="flex gap-4 justify-between w-full">
         {TEAM.map((member: TeamMember, index: number) => (
           <div
             key={member.id}
-            className={` p-[1px] ${
+            className={` p-[1px] w-full ${
               index === currentIndex ? "bg-blue-gradient" : "bg-transparent"
             }`}
           >
@@ -62,7 +62,7 @@ const Team = () => {
               className="relative border-4 border-grayscale-300"
               key={member.id}
             >
-              <img src={member.img} alt={member.name} className="" />
+              <img src={member.img} alt={member.name} className="w-full" />
               <div className="image-overlay"></div>
               <div
                 className={`absolute z-20 bottom-3 text-center w-full ${
