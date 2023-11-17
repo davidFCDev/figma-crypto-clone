@@ -44,6 +44,7 @@ body {
   /* Estilos específicos para teléfonos móviles */
   .screen-path {
     background-size: auto ;
+    background-position: top;
   }
 }
 
@@ -58,6 +59,14 @@ body {
   z-index: 1;
 }
 
+@media (max-width: 767px) {
+  /* Estilos específicos para teléfonos móviles */
+  .screen-path-bottom {
+    background-size: auto ;
+    background-position: bottom;
+  }
+}
+
 /** Gradient */
 
 .bg-blue-gradient {
@@ -69,14 +78,6 @@ body {
   );
 }
 
-.bg-blue-gradient:hover {
-  background: rgb(12, 186, 241);
-  background: linear-gradient(
-    90deg,
-    rgba(12, 186, 241, 1) 0%,
-    rgba(233, 92, 233, 1) 52%
-  );
-}
 
 .bg-blue-gradient-reverse {
   background: rgba(233, 92, 233);

@@ -4,7 +4,7 @@ import Solution from "../components/solution/Video";
 
 const SolutionPage = () => {
   return (
-    <div>
+    <div className="screen-path">
       <Detail />
       <Solution />
       <Description />

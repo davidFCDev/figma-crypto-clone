@@ -1,9 +1,9 @@
 import Hero from "../components/home/Hero";
-// import Faq from "../components/home/Faq";
+import Faq from "../components/home/Faq";
 import Functionality from "../components/home/Functionality";
 import Lockpay from "../components/home/Lockpay";
 import Solution from "../components/home/Solution";
-// import Testimonial from "../components/home/Testimonial";
+import Testimonial from "../components/home/Testimonial";
 import Usecases from "../components/home/Usecases";
 
 const HomePage = () => {
@@ -14,8 +14,8 @@ const HomePage = () => {
       <Functionality />
       <Solution />
       <Usecases />
-      {/* <Faq />
-      <Testimonial /> */}
+      <Faq />
+      <Testimonial />
     </div>
   );
 };

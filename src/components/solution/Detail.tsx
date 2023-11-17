@@ -4,7 +4,7 @@ import SectionTitle from "../SectionTitle";
 
 const Detail = () => {
   return (
-    <main className="font-chakra w-full pt-56 pb-20 relative flex flex-col screen-path">
+    <main className="font-chakra w-full pt-56 pb-20 relative flex flex-col ">
       <SectionTitle section="Detail Solution" />
 
       <section className="flex flex-col justify-center items-center relative">

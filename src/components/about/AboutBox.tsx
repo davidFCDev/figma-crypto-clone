@@ -3,7 +3,7 @@ import { styles } from "../../style";
 const AboutBox = () => {
   return (
     <div className={`${styles.paddingX} flex font-chakra my-10`}>
-      <div className="w-full bg-grayscale-300 box-shadow py-12 px-20 flex justify-center gap-12 rounded">
+      <div className="w-full bg-grayscale-300 box-shadow py-12 px-6 small:px-20 flex flex-col small:flex-row justify-center gap-12 rounded">
         <div className="flex flex-col gap-6 items-start max-w-sm">
           <img src="/eye-icon.png" alt="eye" className="" />
           <div className="flex flex-col gap-4">

@@ -2,7 +2,7 @@ import Use from "../components/usecase/Use";
 
 const UseCasesPage = () => {
   return (
-    <div>
+    <div className="screen-path">
       <Use />
     </div>
   );
