@@ -3,7 +3,7 @@ import Button from "../Button";
 import SectionTitle from "../SectionTitle";
 import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Detail = () => {
   const TEXTOS = [
@@ -43,41 +43,41 @@ const Detail = () => {
           />
 
           {/***** Images Responsive *****/}
-            <img
-              src="/circles-responsive.png"
-              alt="circles"
-              className="relative z-0 top-0 block small:hidden"
-            />
+          <img
+            src="/circles-responsive.png"
+            alt="circles"
+            className="relative z-0 top-0 block small:hidden"
+          />
 
-            <div className="absolute z-10 top-4 flex items-center small:hidden">
-              {[0, 1, 2].map((offset) => (
-                <div
-                  key={`element-${offset}`}
-                  className={`flex items-center justify-center relative z-10 ${
-                    offset === 0
-                      ? "-left-14 top-8"
-                      : offset === 2
-                      ? "-right-14 top-8"
-                      : ""
-                  }`}
+          <div className="absolute z-10 top-4 flex items-center small:hidden">
+            {[0, 1, 2].map((offset) => (
+              <div
+                key={`element-${offset}`}
+                className={`flex items-center justify-center relative z-10 ${
+                  offset === 0
+                    ? "-left-14 top-8"
+                    : offset === 2
+                    ? "-right-14 top-8"
+                    : ""
+                }`}
+              >
+                <img
+                  src={`/esphera${offset === 1 ? "" : "-off"}.png`}
+                  alt="services"
+                  className="relative w-52"
+                />
+                <motion.h3
+                  initial={{ opacity: 0, x: 50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: 50 }}
+                  transition={{ duration: 0.5 }}
+                  className="absolute z-20 text-center text-xs max-w-fit px-2"
                 >
-                  <img
-                    src={`/esphera${offset === 1 ? "" : "-off"}.png`}
-                    alt="services"
-                    className="relative w-52"
-                  />
-                  <motion.h3
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: 50 }}
-                    transition={{ duration: 0.5 }}
-                    className="absolute z-20 text-center text-xs max-w-fit px-2"
-                  >
-                    {TEXTOS[(index + offset) % TEXTOS.length]}
-                  </motion.h3>
-                </div>
-              ))}
-            </div>
+                  {TEXTOS[(index + offset) % TEXTOS.length]}
+                </motion.h3>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="flex flex-col items-center gap-8 small:max-w-2xl mt-[74%] small:mt-[20%] px-6 small:px-0 z-30">
