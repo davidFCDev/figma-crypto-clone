@@ -20,7 +20,9 @@ const Usecases = () => {
   const currentUse = USE_CASE[currentIndex];
 
   return (
-    <div className={`${styles.paddingX} w-full py-40 flex flex-col gap-14`}>
+    <div
+      className={`${styles.paddingX} w-full pt-44 pb-28 flex flex-col gap-14 relative`}
+    >
       <header className="flex flex-col small:flex-row small:justify-between">
         <div className="flex flex-col gap-5 items-start small:max-w-xl">
           <h2 className={`${styles.gradientText}`}>Use Cases</h2>
@@ -48,12 +50,12 @@ const Usecases = () => {
         </div>
       </header>
 
-      <main className="bg-grayscale-300 w-full">
+      <main className="bg-grayscale-300 w-full box-shadow">
         <div
           key={currentUse.id}
           className="flex flex-col small:flex-row justify-between pt-14 px-6 small:px-10 gap-10"
         >
-          <div className="flex flex-col gap-5 small:gap-0 justify-between items-start w-full">
+          <div className="flex flex-col gap-5 justify-between items-start w-full">
             <div className="flex flex-col gap-4 items-start">
               <span className="bg-zinc-500 py-[3px] px-2 rounded-full text-sm">
                 Use Case
@@ -86,7 +88,6 @@ const Usecases = () => {
                 </div>
               </button>
             </div>
-
             <motion.img
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -94,7 +95,18 @@ const Usecases = () => {
               transition={{ duration: 3 }}
               src={currentUse.image}
               alt={currentUse.title}
-              className="w-full small:max-w-lg pt-6 small:pt-0"
+              className="w-full pt-6 small:pt-0"
+            />
+            <img
+              src="light-usecase.webp"
+              alt="light"
+              className="absolute -z-10 right-0 -bottom-16 w-full hidden small:block"
+            />
+            {/* Responsive Light */}
+            <img
+              src="light-responsive.webp"
+              alt="responsive"
+              className="absolute -z-10 right-0 w-full block small:hidden"
             />
           </div>
 

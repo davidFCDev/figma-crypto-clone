@@ -3,9 +3,8 @@ import Button from "../Button";
 
 const Lockpay = () => {
   return (
-    <main className="w-full justify-start items-start flex flex-col small:flex-row-reverse py-6 small:py-16 relative -top-24 small:-top-10">
-
-      <div className="absolute hidden small:flex small:left-0 small:-top-10">
+    <main className="w-full justify-between small:items-center flex flex-col small:flex-row small:pb-10 relative">
+      <div className="relative hidden small:flex">
         <img src="/mobile.png" alt="desktop" className="z-0 w-full" />
         <img
           src="/chart-left.png"
@@ -18,10 +17,9 @@ const Lockpay = () => {
         <img src="/mobile-responsive.png" alt="desktop" className="w-full" />
       </div>
 
-      
       <div className="flex flex-col px-6 small:px-0 gap-4 items-start max-w-lg relative small:right-[14%] -top-10 small:top-0">
         <h2 className={`${styles.gradientText}`}>Lockpay</h2>
-        <h1 className="text-4xl small:text-5xl leading-tight font-semibold">
+        <h1 className={`${styles.title}`}>
           Customizable lockers for any project’s use cases
         </h1>
         <p className={`${styles.parraph}`}>
@@ -46,9 +44,8 @@ const Lockpay = () => {
             <span>Referral Program</span>
           </li>
         </ul>
-        <Button text="Read more"/>
+        <Button text="Read more" />
       </div>
-
     </main>
   );
 };

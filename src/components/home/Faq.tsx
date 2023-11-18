@@ -1,76 +1,33 @@
-import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { styles } from "../../style";
-import { FAQ } from "../../constants";
-import { useState } from "react";
+import ArrayFaq from "./ArrayFaq";
 
 const Faq = () => {
-  const [activeQuestion, setActiveQuestion] = useState<number | null>(0);
-
-  const handleClick = (index: number) => {
-    setActiveQuestion(index === activeQuestion ? null : index);
-  };
+  
 
   return (
     <div
       id="faq"
       className={`${styles.paddingX} flex flex-col small:flex-row w-full items-start justify-between py-16 relative z-10`}
     >
-      <img
-        src="/light2.png"
-        alt="light"
-        className="absolute left-0 top-60 small:top-20 opacity-90 -z-10"
-      />
-
       <div className="flex flex-col gap-5 items-start">
+        <img
+          src="/light-faq.webp"
+          alt="light"
+          className="absolute -z-10 left-0 top-32 hidden small:block"
+        />
+        <img
+          src="/light-faq-responsive.webp"
+          alt="light"
+          className="absolute -z-10 w-full left-0 top-40 block small:hidden"
+        />
         <h2 className={`${styles.gradientText}`}>About lockpay</h2>
-        <h1 className="text-4xl small:text-5xl leading-tight font-semibold">
-          Frequently Asked Questions
-        </h1>
-        <span className="text-base small:text-lg text-grayscale-200">Still need help? Chat to us.</span>
+        <h1 className={`${styles.title}`}>Frequently Asked Questions</h1>
+        <span className="text-base small:text-lg text-grayscale-200">
+          Still need help? Chat to us.
+        </span>
       </div>
 
-      <div className="flex flex-col gap-6 small:w-[65%] mt-12">
-        {FAQ.map((question, index) => (
-          <div key={index} className="flex flex-col gap-6">
-            {activeQuestion === index ? (
-              <>
-                <div
-                  className="flex items-center justify-between hover:cursor-pointer"
-                  onClick={() => handleClick(index)}
-                >
-                  <h3 className="text-lg small:text-xl">{question.title}</h3>
-                  <div
-                    onClick={() => handleClick(index)}
-                    className="hover:cursor-pointer"
-                  >
-                    <MdKeyboardArrowUp />
-                  </div>
-                </div>
-                <hr className="border-gray-500 w-full" />
-                <p className={`${styles.parraph} pr-6 text-base small:text-lg`}>
-                  {question.description}
-                </p>
-              </>
-            ) : (
-              <div className="flex flex-col gap-6">
-                <div
-                  className="flex items-center justify-between hover:cursor-pointer"
-                  onClick={() => handleClick(index)}
-                >
-                  <h3 className="text-lg small:text-xl">{question.title}</h3>
-                  <div
-                    onClick={() => handleClick(index)}
-                    className="hover:cursor-pointer"
-                  >
-                    <MdKeyboardArrowDown />
-                  </div>
-                </div>
-                <hr className="border-gray-500 w-full" />
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
+      <ArrayFaq />
     </div>
   );
 };

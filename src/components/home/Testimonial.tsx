@@ -5,7 +5,6 @@ const Testimonial = () => {
 
       <img src="/testimonial-responsive.png" alt="testimonial" className="block small:hidden w-full"/>
 
-
     </div>
   );
 };

@@ -12,12 +12,10 @@ const Functionality = () => {
   };
 
   return (
-    <div className="w-full justify-start small:items-center flex flex-col-reverse small:flex-row small:pl-28 pb-16 pt-0 small:py-16 relative -top-10 small:top-0">
+    <div className="w-full justify-start small:items-center gap-10 small:gap-0 flex flex-col-reverse small:flex-row small:pl-28 py-16 relative">
       <div className="flex flex-col gap-5 items-start pt-10 px-6 small:pr-4 small:w-[42%]">
         <h2 className={`${styles.gradientText}`}>Functionality</h2>
-        <h1 className="text-4xl small:text-5xl leading-tight font-semibold small:max-w-lg">
-          LockPay Direct Payments
-        </h1>
+        <h1 className={`${styles.title} max-w-lg`}>LockPay Direct Payments</h1>
 
         <div className="flex flex-col gap-6 w-full mt-5">
           {FUNTIONALITY.map((question, index) => (
@@ -64,16 +62,24 @@ const Functionality = () => {
           ))}
         </div>
       </div>
-      
-      <img
-          src="/locker.png"
-          alt="desktop"
-          className="relative z-20 small:pt-20"
-        />
 
-      <div className="small:absolute small:right-0 small:top-0 w-full">
-        <img src="/light.png" alt="light" className="relative w-full" />
-      </div>
+      <img
+        src="/locker.png"
+        alt="desktop"
+        className="relative z-20 small:pt-10"
+      />
+
+      <img
+        src="/light.png"
+        alt="light"
+        className="absolute right-0 -top-20  hidden small:block "
+      />
+      {/* Responsive Light */}
+      <img
+        src="/light-responsive.webp"
+        alt="light responsive"
+        className="absolute right-0 -top-36 w-full block small:hidden"
+      />
     </div>
   );
 };

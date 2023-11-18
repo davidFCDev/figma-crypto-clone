@@ -22,14 +22,16 @@ const Solution: FC<SolutionProps> = () => {
   };
 
   return (
-    <div className={`${styles.paddingX} w-full py-6 small:py-20 flex flex-col gap-16`}>
+    <div
+      className={`${styles.paddingX} w-full py-6 small:py-16 flex flex-col gap-16`}
+    >
       <header className="flex flex-col small:flex-row small:justify-between">
         <div className="flex flex-col gap-3 items-start">
           <h2 className={`${styles.gradientText}`}>Solution</h2>
-          <h1 className="text-3xl small:text-5xl leading-tight font-semibold">Our Solution</h1>
+          <h1 className={`${styles.title}`}>Our Solution</h1>
         </div>
 
-        <div className="flex flex-col gap-4 small:gap-2 text-grayscale-100 font-light text-base leading-7 tracking-wide small:max-w-2xl small:px-5 small:mr-20 mt-6">
+        <div className="flex flex-col gap-4 small:gap-0 text-grayscale-100 font-light text-base leading-7 tracking-wide small:max-w-2xl small:px-5 small:mr-20 mt-6">
           <p>
             LockPay presents a comprehensive solution that addresses the
             challenges associated with asset security and cryptocurrency
@@ -56,23 +58,29 @@ const Solution: FC<SolutionProps> = () => {
             onMouseLeave={handleMouseLeave}
             style={{ top: index * 20 + "px" }}
           >
-            <div className="flex flex-col py-8 px-8 gap-10 items-start bg-grayscale-300 rounded shadow">
-              <img src={solution.icon} alt="Turnover" className="" />
-              <div className="flex flex-col gap-4">
-                <h3 className="text-base small:text-lg tracking-wider">{solution.title}</h3>
-                <p className="text-grayscale-200 font-light text-sm small:text-lg leading-7 tracking-wide">
-                  {solution.description}
-                </p>
-              </div>
-            </div>
-
-            {hoveredIndex === index && (
-              <button className="bg-blue-gradient p-[1px] absolute right-[32%] bottom-[20%] opacity-90">
-                <div className="uppercase bg-grayscale-300 px-5 py-4 ">
-                  Learn more
+            <div className="flex flex-col py-8 px-8 gap-10 justify-end items-center bg-grayscale-300 rounded shadow">
+              <div className="flex flex-col gap-6">
+                <div className="w-full justify-start">
+                  <img src={solution.icon} alt="Turnover" className="" />
                 </div>
-              </button>
-            )}
+                <div className="flex flex-col gap-4">
+                  <h3 className="text-base small:text-lg tracking-wider">
+                    {solution.title}
+                  </h3>
+                  <p className="text-grayscale-200 text-xs small:text-sm leading-7 small:leading-7">
+                    {solution.description}
+                  </p>
+                </div>
+              </div>
+
+              {hoveredIndex === index && (
+                <button className="bg-blue-gradient p-[1px] absolute opacity-70 hover:shadow-grayscale-200 hover:shadow">
+                  <div className="uppercase bg-grayscale-300 px-5 py-4 text-xs small:text-sm">
+                    Learn more
+                  </div>
+                </button>
+              )}
+            </div>
           </div>
         ))}
       </main>
