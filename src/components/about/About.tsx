@@ -6,10 +6,10 @@ const About = () => {
     <div className="w-full pt-56 mb-20">
       <SectionTitle section="About us" />
 
-      <main className="flex flex-col-reverse small:flex-row py-12 small:py-28 small:pl-28 relative">
-        <div className="flex flex-col gap-4 items-start small:max-w-2xl small:pr-14 px-7 small:px-0">
+      <main className="flex flex-col-reverse items-start justify-between small:flex-row py-12 small:pt-36 pb-20 small:px-28 relative">
+        <div className="flex flex-col gap-4 items-start small:pr-14 px-7 small:px-0 small:max-w-2xl">
           <h2 className={`${styles.gradientText}`}>About us</h2>
-          <h1 className="text-4xl small:text-5xl leading-tight font-semibold tracking-normal">
+          <h1 className={`${styles.title} small:leading-tight`}>
             We believe in unlocking new possibilities for Web3 Projects in the
             digital age
           </h1>
@@ -30,9 +30,11 @@ const About = () => {
           </p>
         </div>
 
-        <img src="/empty-img-right.png" alt="empty-img" className="hidden small:block absolute right-0 top-0" />
+        <img src="/empty-img.webp" alt="empty-img" className="hidden small:block" />
+        <img src="/public/light-about-right.webp" alt="empty-img" className="absolute top-0 right-0 hidden small:block" />
 
-        <img src="/empty-responsive.png" alt="empty-img" className="block small:hidden" />
+        {/* Responsive Image */}
+        <img src="/empty-responsive.png" alt="empty-img" className="block small:hidden w-full" />
 
       </main>
     </div>
