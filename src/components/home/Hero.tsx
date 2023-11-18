@@ -16,7 +16,7 @@ const Hero = () => {
             businesses, projects, and brands to create customizable lockers
             tailored to their unique requirements.
           </p>
-          <Button text="Discover more" />
+          <Button text="Launch Dapp" />
         </div>
 
         <img src="/desktop.webp" alt="desktop" className="hidden small:block max-w-[62%]" />

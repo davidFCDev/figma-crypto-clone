@@ -22,7 +22,7 @@ export const FUNTIONALITY = [
   {
     title: "Flexible Cryptocurrency Support",
     description:
-      "The direct pay option offers businesses the ability to select from a comprehensive list of supported cryptocurrencies, providing customers with a wide range of payment choices.",
+      "The direct pay option offers projects and businesses the ability to select from a comprehensive list of supported cryptocurrencies, providing customers with a wide range of payment choices.",
   },
   {
     title: "Seamless Payment Process",
@@ -78,7 +78,7 @@ export const FAQ = [
       "LockPay offers businesses unparalleled flexibility, security, and efficiency in asset locking and payment acceptance. It empowers businesses to secure their digital assets and tap into the cryptocurrency market, expanding their customer base and exploring new avenues of commerce.",
   },
   {
-    title: " Is LockPay user-friendly?",
+    title: "Is LockPay user-friendly?",
     description:
       "Yes, LockPay is designed with a user-friendly approach. Its platform and features are created to be easily accessible and navigable, ensuring a seamless experience for businesses and users.",
   },

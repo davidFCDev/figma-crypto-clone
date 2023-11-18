@@ -6,7 +6,7 @@ const Use = () => {
     <div className="w-full pt-56 mb-20 flex flex-col">
       <SectionTitle section="Use Cases" />
 
-      <section className="flex flex-col-reverse small:flex-row items-start relative pt-2 small:pt-28">
+      <section className="flex flex-col-reverse small:flex-row items-start relative pt-28">
         <div className="small:pl-28 flex flex-col gap-8 relative px-6 small:px-0 -top-20 small:top-0">
           <div className="flex flex-col gap-5 items-start">
             <h2 className={`${styles.gradientText}`}>Use case</h2>
@@ -19,7 +19,9 @@ const Use = () => {
             <div className="flex flex-col small:flex-row gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
-                <h3 className="text-xl">Subscription Services</h3>
+                <h3 className="text-xl text-grayscale-100">
+                  Subscription Services
+                </h3>
                 <p className={`${styles.parraph} text-grayscale-200`}>
                   Businesses offering subscription-based services can utilize
                   the Locker functionality to allow customers to lock up tokens
@@ -41,7 +43,9 @@ const Use = () => {
                 className="block small:hidden"
               />
               <div className="flex flex-col gap-4">
-                <h3 className="text-xl">Staking Discounts</h3>
+                <h3 className="text-xl text-grayscale-100">
+                  Staking Discounts
+                </h3>
                 <p className={`${styles.parraph} text-grayscale-200`}>
                   Projects that have their native tokens staked for various
                   purposes can leverage the Locker to provide discounts or
@@ -65,7 +69,9 @@ const Use = () => {
               />
 
               <div className="flex flex-col gap-4">
-                <h3 className="text-xl">Token Vesting</h3>
+                <h3 className="text-xl text-grayscale-100">
+                  Token & Team Vesting
+                </h3>
                 <p className={`${styles.parraph} text-grayscale-200`}>
                   {" "}
                   ICOs and token distribution events can utilize the Locker to
@@ -88,7 +94,9 @@ const Use = () => {
                 className="block small:hidden"
               />
               <div className="flex flex-col gap-4">
-                <h3 className="text-xl">Asset Locking</h3>
+                <h3 className="text-xl text-grayscale-100">
+                  Creator & Art Locking
+                </h3>
                 <p className={`${styles.parraph} text-grayscale-200`}>
                   {" "}
                   Artists and content creators can leverage the Locker to
@@ -107,11 +115,11 @@ const Use = () => {
           alt="usecase1"
           className="absolute right-0 top-0 hidden small:block"
         />
-        <img
+        {/* <img
           src="/usecase1-responsive.png"
           alt="usecase1"
           className="block small:hidden w-full"
-        />
+        /> */}
       </section>
 
       <section className="flex flex-col gap-16 py-0 small:py-28">
@@ -129,11 +137,11 @@ const Use = () => {
             className="absolute left-0 -top-32 hidden small:block"
           />
 
-          <img
+          {/* <img
             src="/usecase2-responsive.png"
             alt="usecase2"
             className="block small:hidden w-full"
-          />
+          /> */}
 
           <div className="flex flex-col gap-6 small:max-w-2xl small:pr-4 px-6 small:px-0 ">
             <div className="flex-col gap-5 items-start flex small:hidden">
@@ -145,7 +153,9 @@ const Use = () => {
             <div className="flex flex-col small:flex-row gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
-                <h3 className="text-xl">E-commerce Integration</h3>
+                <h3 className="text-xl text-grayscale-100">
+                  E-commerce Integration
+                </h3>
                 <p className={`${styles.parraph} text-grayscale-200`}>
                   Online retailers and service providers can use the Direct Pay
                   functionality to accept a wide range of cryptocurrencies as
@@ -158,7 +168,9 @@ const Use = () => {
             <div className="flex flex-col small:flex-row gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
-                <h3 className="text-xl">Cross-Border Payments</h3>
+                <h3 className="text-xl text-grayscale-100">
+                  Cross-Border Payments
+                </h3>
                 <p className={`${styles.parraph} text-grayscale-200`}>
                   Businesses operating globally can leverage Direct Pay to
                   overcome the limitations of traditional banking systems and
@@ -172,7 +184,9 @@ const Use = () => {
             <div className="flex flex-col small:flex-row gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
-                <h3 className="text-xl">Crowdfunding Campaigns</h3>
+                <h3 className="text-xl text-grayscale-100">
+                  Crowdfunding Campaigns
+                </h3>
                 <p className={`${styles.parraph} text-grayscale-200`}>
                   {" "}
                   Startups and entrepreneurs seeking funding can utilize Direct
@@ -188,7 +202,7 @@ const Use = () => {
         </div>
       </section>
 
-      <section className="flex flex-col-reverse small:flex-row items-start relative pt-10 small:pt-0">
+      <section className="flex flex-col-reverse small:flex-row items-start relative pt-40 small:pt-0">
         <div className="small:pl-28 flex flex-col gap-8 py-0 small:py-28 relative px-6 small:px-0 -top-16">
           <div className="flex flex-col gap-5 items-start">
             <h2 className={`${styles.gradientText}`}>Use case</h2>
@@ -201,7 +215,7 @@ const Use = () => {
             <div className="flex flex-col small:flex-row gap-5 items-start">
               <img src="/cloud-icon.png" alt="cloud icon" />
               <div className="flex flex-col gap-4">
-                <h3 className="text-xl">User Acquisition</h3>
+                <h3 className="text-xl text-grayscale-100">User Acquisition</h3>
                 <p className={`${styles.parraph} text-grayscale-200`}>
                   Companies can incentivize their users to refer new customers
                   by offering referral rewards through LockPay's Referral
@@ -224,7 +238,9 @@ const Use = () => {
                 className="block small:hidden"
               />
               <div className="flex flex-col gap-4">
-                <h3 className="text-xl">Community Building</h3>
+                <h3 className="text-xl text-grayscale-100">
+                  Community Building
+                </h3>
                 <p className={`${styles.parraph} text-grayscale-200`}>
                   Referral programs can be used to foster a strong community
                   around a project or brand. By rewarding users who successfully
@@ -246,7 +262,7 @@ const Use = () => {
                 className="block small:hidden"
               />
               <div className="flex flex-col gap-4 small:opacity-10">
-                <h3 className="text-xl">Market Expansion</h3>
+                <h3 className="text-xl text-grayscale-100">Market Expansion</h3>
                 <p
                   className={`${styles.parraph} text-grayscale-200 small:hidden`}
                 >
@@ -267,11 +283,11 @@ const Use = () => {
           alt="usecase3"
           className="absolute right-0 hidden small:block"
         />
-        <img
+        {/* <img
           src="/usecase3-responsive.png"
           alt="usecase3"
           className="block small:hidden w-full"
-        />
+        /> */}
       </section>
     </div>
   );

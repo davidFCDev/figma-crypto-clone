@@ -14,7 +14,7 @@ const About = () => {
             digital age
           </h1>
           <p className={`${styles.parraph} text-grayscale-200`}>
-            We understand the challenges they face in managing and securing
+            We understand the challenges the projects face in managing and securing
             digital assets while providing seamless payment experiences for
             their customers. That's why we have developed a revolutionary
             platform that combines decentralized lockers with direct payment
@@ -31,7 +31,7 @@ const About = () => {
         </div>
 
         <img src="/empty-img.webp" alt="empty-img" className="hidden small:block" />
-        <img src="/public/light-about-right.webp" alt="empty-img" className="absolute top-0 right-0 hidden small:block" />
+        <img src="/light-about-right.webp" alt="empty-img" className="absolute top-0 right-0 hidden small:block" />
 
         {/* Responsive Image */}
         <img src="/empty-responsive.png" alt="empty-img" className="block small:hidden w-full" />

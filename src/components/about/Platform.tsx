@@ -3,10 +3,10 @@ import Button from "../Button";
 
 const Platform = () => {
   return (
-    <main className="flex flex-col-reverse small:flex-row-reverse my-10 small:my-44 relative">
-      <div className="flex flex-col gap-5 items-start small:max-w-2xl small:pr-20 small:mr-20 px-7 small:px-0">
+    <main className="flex flex-col-reverse items-start justify-between small:flex-row-reverse pt-12 small:pt-36 small:pb-28 small:px-28 relative">
+      <div className="flex flex-col gap-5 items-start small:pr-14 px-7 small:px-0 small:max-w-2xl">
         <h2 className={`${styles.gradientText}`}>About plataform</h2>
-        <h1 className="text-4xl small:text-5xl leading-tight font-semibold tracking-normal">
+        <h1 className={`${styles.title}`}>
           Our platform harnesses the power of blockchain technology
         </h1>
         <p
@@ -23,14 +23,27 @@ const Platform = () => {
           provide a hybrid model that combines the security of decentralized
           lockers with the efficiency of direct payments.
         </p>
-        <Button text="Read more" />
+        <div className="pt-4">
+          <Button text="Read more" />
+        </div>
       </div>
 
-      <img src="/empty-responsive.png" alt="empty-img" className="block small:hidden" />
       <img
-        src="/empty-img-left.png"
+        src="/empty-img.webp"
         alt="empty-img"
-        className="absolute left-0 -top-[20%] hidden small:block"
+        className="hidden small:block"
+      />
+      <img
+        src="/light-about-left.webp"
+        alt="empty-img"
+        className="absolute top-0 left-0 hidden small:block"
+      />
+
+      {/* Responsive Image */}
+      <img
+        src="/empty-responsive.png"
+        alt="empty-img"
+        className="block small:hidden w-full"
       />
     </main>
   );

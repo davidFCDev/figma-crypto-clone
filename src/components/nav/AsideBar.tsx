@@ -62,7 +62,7 @@ const AsideBar = () => {
                   className="text-white"
                   onClick={() => handleLinkClick("/")}
                 >
-                  Home
+                  Launch Dapp
                 </Link>
                 <Link to={"/about"} onClick={() => handleLinkClick("/about")}>
                   About us
