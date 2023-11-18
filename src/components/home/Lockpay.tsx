@@ -17,7 +17,7 @@ const Lockpay = () => {
         <img src="/mobile-responsive.webp" alt="desktop" className="w-full" />
       </div>
 
-      <div className="flex flex-col px-6 small:px-0 gap-4 items-start max-w-lg relative small:right-[14%] -top-10 small:top-0">
+      <div className="flex flex-col px-6 small:px-0 gap-4 items-start max-w-lg relative small:right-[14%] ">
         <h2 className={`${styles.gradientText}`}>Lockpay</h2>
         <h1 className={`${styles.title}`}>
           Customizable lockers for any project’s use cases
