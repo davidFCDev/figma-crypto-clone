@@ -47,7 +47,7 @@ const Solution: FC<SolutionProps> = () => {
         </div>
       </header>
 
-      <main className="grid grid-cols-1 small:grid-cols-3">
+      <main className="grid grid-cols-1 xsmall:grid-cols-2 xsmall:gap-5 small:grid-cols-3">
         {SOLUTION.map((solution: SolutionItem, index: number) => (
           <div
             key={index}

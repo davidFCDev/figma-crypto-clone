@@ -2,7 +2,7 @@ export const styles = {
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
 
-  paddingX: "sm:px-28 px-7",
+  paddingX: "px-7 sm:px-16 lg:px-28",
   paddingY: "sm:py-16 py-7",
   padding: "sm:px-16 px-6 sm:py-12 py-4",
   marginX: "sm:mx-16 mx-6",
