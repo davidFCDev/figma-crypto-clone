@@ -3,8 +3,8 @@ import { styles } from "../../style";
 const Subscribe = () => {
   return (
     <main className={`${styles.paddingX} w-full`}>
-      <div className="w-full bg-blue-gradient flex flex-col small:flex-row items-center justify-between gap-12 small:gap-0 py-10 small:py-14 px-6 small:px-20 rounded">
-        <h2 className="text-4xl leading-tight small:leading-snug font-semibold small:max-w-lg pr-10 small:pr-0">
+      <div className="w-full bg-blue-gradient flex flex-col small:flex-row items-center justify-between gap-12 small:gap-0 py-6 small:py-14 px-6 small:px-20 rounded">
+        <h2 className="text-3xl small:text-4xl leading-tight small:leading-snug font-semibold small:max-w-lg pr-10 small:pr-0">
           Subscribe to our newsletter for latest updates
         </h2>
 
@@ -14,7 +14,7 @@ const Subscribe = () => {
             <input
               className="w-full bg-transparent placeholder:text-white outline-none focus:outline-none"
               type="email"
-              placeholder="Enter email"
+              placeholder="Enter email..."
             />
           </div>
 

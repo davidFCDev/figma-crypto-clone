@@ -10,7 +10,7 @@ const Nav: React.FC = () => {
       className={`${styles.paddingX} bg-grayscale-500 py-8 w-full flex items-center justify-between text-white fixed screen-path`}
     >
       <Link to="#">
-        <img src="/logo.png" alt="logo" className="w-28 small:w-full" />
+        <img src="/logo.png" alt="logo" className="w-32 small:w-full" />
       </Link>
 
       <div className="hidden sm:flex text-lg text-gray-300 gap-14">

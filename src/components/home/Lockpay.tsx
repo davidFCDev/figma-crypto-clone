@@ -14,7 +14,7 @@ const Lockpay = () => {
       </div>
 
       <div className="flex w-full small:hidden">
-        <img src="/mobile-responsive.png" alt="desktop" className="w-full" />
+        <img src="/mobile-responsive.webp" alt="desktop" className="w-full" />
       </div>
 
       <div className="flex flex-col px-6 small:px-0 gap-4 items-start max-w-lg relative small:right-[14%] -top-10 small:top-0">

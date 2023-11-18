@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="flex flex-col small:flex-row justify-between w-full gap-14 small:gap-0 ">
         <div className="flex flex-col justify-between items-start">
           <div className="flex items-start">
-            <img src="/logo.png" alt="logo" className="w-48 small:w-full" />
+            <img src="/logo.png" alt="logo" className="w-32 small:w-full" />
           </div>
           <div className="gap-4 hidden small:flex">
             <a href="#">

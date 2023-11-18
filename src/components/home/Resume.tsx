@@ -2,7 +2,7 @@ import { styles } from "../../style";
 
 const Resume = () => {
   return (
-    <div className={`${styles.paddingX} flex`}>
+    <div className={`${styles.paddingX} flex pt-10`}>
       <div className="w-full bg-grayscale-300 box-shadow px-6 py-10 small:p-14 flex flex-col small:flex-row gap-10 small:gap-0 justify-between rounded">
         <div className="flex flex-col gap-10 items-start max-w-xs">
           <img src="/turnover-icon.png" alt="Turnover" className="" />

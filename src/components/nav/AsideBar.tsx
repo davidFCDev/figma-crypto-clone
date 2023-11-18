@@ -42,7 +42,7 @@ const AsideBar = () => {
                   <img
                     src="/logo.png"
                     alt="logo"
-                    className="w-28 small:w-full"
+                    className="w-32 small:w-full"
                   />
                 </Link>
                 <div className="" onClick={handleToggle}>
