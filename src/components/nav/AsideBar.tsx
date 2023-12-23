@@ -18,6 +18,7 @@ const AsideBar = () => {
       navigate(path);
     }, 300);
   };
+  
   return (
     <aside className="sm:hidden">
         <div className="" onClick={handleToggle}>
